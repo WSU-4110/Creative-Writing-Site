@@ -1,0 +1,25 @@
+#top_bar{
+    background-color: black;
+}
+
+h1{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+            /* shawn testing search button css*/
+{
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid grey;
+    float: right;
+    width: 20%;
+    background: #f1f1f1;
+  }
+  
