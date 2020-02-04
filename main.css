@@ -1,31 +1,31 @@
-﻿h1{
+﻿#top_bar{
+    background-color: black;
+}
+
+h1{
     font-size: 16px;
     color: black;
-    text-align: center;}
+    text-align: center;
+}
 
-				/* CLASS & ID: */
-#top_bar{
-	background-color: black;
-	position: relative;}
-				/* this class is for account creation page */
-.account_creation {}
-
-            			/* shawn testing search button css*/
+            /* shawn testing search button css*/
 {
-    box-sizing: border-box;}
+    box-sizing: border-box;
+  }
   
-  				/* Style the search field */
+  /* Style the search field */
   form.example input[type=text] {
     padding: 10px;
     font-size: 12px;
     border: 1px solid grey;
     float: right;
     width: 20%;
-    background: #f1f1f1;}
+    background: #f1f1f1;
+  }
 
 
   
- 				 /* Style the submit button */
+  /* Style the submit button */
   form.example button {
     float: right;
     width: 5%;
@@ -34,17 +34,24 @@
     color: white;
     font-size: 12px;
     border: 1px solid grey;
-    border-left: none; 		/* Prevent double borders */
-    cursor: pointer;}
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
   
   form.example button:hover {
-    background: #0b7dda;}
+    background: #0b7dda;
+  }
   
- 				 /* Clear floats */
+  /* Clear floats */
   form.example::after {
     content: "";
     clear: both;
-    display: table;}
-            			/* end shawns search button css */
+    display: table;
+  }
+            /* end shawns search button css */
 
 
+/* this class is for account creation page */
+.account_creation {
+
+}
