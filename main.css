@@ -5,7 +5,8 @@
 
 				/* CLASS & ID: */
 #top_bar{
-	background-color: black;}
+	background-color: black;
+	position: relative;}
 				/* this class is for account creation page */
 .account_creation {}
 
