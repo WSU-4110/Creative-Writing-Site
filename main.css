@@ -1,9 +1,8 @@
-﻿#top_bar{
-    background-color: black;
+﻿.top_bar{
+    background-color: #343333;
 }
 
 h1{
-    font-size: 16px;
     color: white;
     text-align: center;
 }
@@ -47,3 +46,70 @@ h1{
     display: table;
   }
             /* end shawns search button css */
+
+/* Navigation */
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+<<<<<<< Updated upstream
+.dropdown-content a {
+=======
+    .dropdown-content a {
+>>>>>>> Stashed changes
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+<<<<<<< Updated upstream
+.dropdown-content a:hover {
+        background-color: #f1f1f1;
+=======
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+>>>>>>> Stashed changes
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
