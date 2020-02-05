@@ -9,9 +9,7 @@ h1{
 }
 
             /* shawn testing search button css*/
-{
-    box-sizing: border-box;
-  }
+
   
   /* Style the search field */
   form.example input[type=text] {
@@ -54,4 +52,8 @@ h1{
 /* this class is for account creation page */
 .account_creation {
 
+}
+
+.uploaddiv{
+  display:block;
 }
