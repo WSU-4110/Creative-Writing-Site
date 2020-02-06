@@ -35,14 +35,33 @@
         <!--wrapper for the upload page-->
         <div class="uploadwrapper"> 
             <main class="uploadmain">
-                <h1 id='header'>
-                    WRITE A DOCUMENT
+                <h1 id='header1'>
+                    <button id='headerbtn'>WRITE</button> <button id='uploadbtn'>UPLOAD</button>
                 </h1>
+
+
+                <!--buttons for bold and fonts and font size-->
                 <table class="uploadtable">
                     <tr>
                         <th><button class="button" id="boldbtn" type="submit">BOLD</button></th>
                         <th><button class="button" id="italicbtn" type="submit">ITALIC</button></th>
                         <th><button class="button" id="underbtn" type="submit">UNDERLINE</button></th>
+                        <th>
+                            <select id="fs">
+                                <option value="Arial">Arial</option>
+                                <option value="Verdana">Verdana</option>
+                                <option value="Impact">Impact</option>
+                                <option value="Comic Sans MS">Comic Sans MS</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select id="size">
+                                <option value="7">7</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                            </select>
+                        </th>
                     </tr> 
                 </table>
                 
@@ -51,18 +70,28 @@
                 
 
 
+
+
+
+
+
+
+
                 <script  src="C:\Users\ianrb\Documents\GitHub\Creative-Writing-Site\jquery-3.4.1.js"></script>
         
-
                 <!--scripts to handle the text formatting buttons-->
                 <script>
                     $(document).ready(function(){
-                        $("#editor").hide().slideDown(500);
+                        $("#editor").hide();
+                        $(".uploadtable").hide();
 
-                       /* $('#boldbtn').on('click', function(){
-                            $('#editor').slideToggle();
-                        });*/
+                        $('#headerbtn').on('click', function(){
+                            $("#editor").slideToggle(300);
+                            $(".uploadtable").slideToggle(300);
+                        })
 
+
+                        //buttons for text editor
                         $('#boldbtn').on('click', function(){
                             document.execCommand('bold');
                         });
@@ -74,6 +103,14 @@
                         $('#underbtn').on('click', function(){
                             document.execCommand('underline');
                         });
+
+                        $("#fs").change(function(){
+                            $('#editor').css("font-family", $(this).val());
+                        })
+
+                        $("#size").change(function(){
+                            $('#editor').css("font-size", $(this).val() + "px");
+                        })
                     });
                 </script>
 
