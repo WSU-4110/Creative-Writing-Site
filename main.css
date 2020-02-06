@@ -76,8 +76,10 @@ h1{
   border: solid black 2px;
   height: 500px;
   width: 600px;
-  margin: 15px;
-  
+  margin: auto;
+  background-color:white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
 }
 
 .uploadtable{
@@ -94,4 +96,8 @@ td, th{
   font-family: courier;
   color: black;
   table-layout: fixed;
+}
+
+[contentEditable=true]:empty:not(:focus):before{
+  content:attr(data-text)
 }

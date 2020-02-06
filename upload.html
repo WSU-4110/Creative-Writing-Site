@@ -40,22 +40,40 @@
                 </h1>
                 <table class="uploadtable">
                     <tr>
-                        <th><button class="button" type="submit">BOLD</button></th>
-                        <th><button class="button" type="submit">ITALIC</button></th>
-                        <th><button class="button" type="submit">UNDERLINE</button></th>
+                        <th><button class="button" id="boldbtn" type="submit">BOLD</button></th>
+                        <th><button class="button" id="italicbtn" type="submit">ITALIC</button></th>
+                        <th><button class="button" id="underbtn" type="submit">UNDERLINE</button></th>
                     </tr> 
                 </table>
                 
-                <textarea id="editor" placeholder="Enter text here"></textarea>
+                <div id="editor" contenteditable="true" data-text="Enter text here..."></div>
 
                 
 
 
                 <script  src="C:\Users\ianrb\Documents\GitHub\Creative-Writing-Site\jquery-3.4.1.js"></script>
         
+
+                <!--scripts to handle the text formatting buttons-->
                 <script>
                     $(document).ready(function(){
                         $("#editor").hide().slideDown(500);
+
+                       /* $('#boldbtn').on('click', function(){
+                            $('#editor').slideToggle();
+                        });*/
+
+                        $('#boldbtn').on('click', function(){
+                            document.execCommand('bold');
+                        });
+
+                        $('#italicbtn').on('click', function(){
+                            document.execCommand('italic');
+                        });
+
+                        $('#underbtn').on('click', function(){
+                            document.execCommand('underline');
+                        });
                     });
                 </script>
 
