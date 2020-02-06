@@ -56,7 +56,7 @@ h1{
 }
 
 .uploadwrapper{
-  width: 75%;
+  width: 60%;
   margin-right:auto;
   margin-left:auto;
   margin-top:20px;
@@ -72,10 +72,10 @@ h1{
   
 }
 
-.editor{
+#editor{
   border: solid black 2px;
   height: 500px;
-  width: 800px;
+  width: 600px;
   margin: 15px;
   
 }
