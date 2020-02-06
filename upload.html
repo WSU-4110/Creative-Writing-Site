@@ -6,6 +6,7 @@
         <title>Writely</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
+
     </head>
     <body>
         <div class="top_bar">
@@ -44,23 +45,84 @@
         <!--wrapper for the upload page-->
         <div class="uploadwrapper"> 
             <main class="uploadmain">
-                <h1>
-                    Write a document
+                <h1 id='header1'>
+                    <button id='headerbtn'>WRITE</button> <button id='uploadbtn'>UPLOAD</button>
                 </h1>
+
+
+                <!--buttons for bold and fonts and font size-->
                 <table class="uploadtable">
                     <tr>
-                        <th><button class="button" type="submit">BOLD</button></th>
-                        <th><button class="button" type="submit">ITALIC</button></th>
-                        <th><button class="button" type="submit">UNDERLINE</button></th>  
+                        <th><button class="button" id="boldbtn" type="submit">BOLD</button></th>
+                        <th><button class="button" id="italicbtn" type="submit">ITALIC</button></th>
+                        <th><button class="button" id="underbtn" type="submit">UNDERLINE</button></th>
+                        <th>
+                            <select id="fs">
+                                <option value="Arial">Arial</option>
+                                <option value="Verdana">Verdana</option>
+                                <option value="Impact">Impact</option>
+                                <option value="Comic Sans MS">Comic Sans MS</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select id="size">
+                                <option value="7">7</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="30">30</option>
+                            </select>
+                        </th>
                     </tr> 
                 </table>
                 
-                <textarea class="editor" placeholder="Enter text here"></textarea>
+                <div id="editor" contenteditable="true" data-text="Enter text here..."></div>
 
                 
 
 
 
+
+
+
+
+
+
+                <script  src="C:\Users\ianrb\Documents\GitHub\Creative-Writing-Site\jquery-3.4.1.js"></script>
+        
+                <!--scripts to handle the text formatting buttons-->
+                <script>
+                    $(document).ready(function(){
+                        $("#editor").hide();
+                        $(".uploadtable").hide();
+
+                        $('#headerbtn').on('click', function(){
+                            $("#editor").slideToggle(300);
+                            $(".uploadtable").slideToggle(300);
+                        })
+
+
+                        //buttons for text editor
+                        $('#boldbtn').on('click', function(){
+                            document.execCommand('bold');
+                        });
+
+                        $('#italicbtn').on('click', function(){
+                            document.execCommand('italic');
+                        });
+
+                        $('#underbtn').on('click', function(){
+                            document.execCommand('underline');
+                        });
+
+                        $("#fs").change(function(){
+                            $('#editor').css("font-family", $(this).val());
+                        })
+
+                        $("#size").change(function(){
+                            $('#editor').css("font-size", $(this).val() + "px");
+                        })
+                    });
+                </script>
 
 
 

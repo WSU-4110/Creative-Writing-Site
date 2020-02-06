@@ -51,24 +51,60 @@ h1{
 
 /* this class is for account creation page */
 
-<<<<<<< HEAD
+
+#header1{
+  font-size: 30px;
+  font-family:'Courier New';
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
-.uploaddiv{
-  display:block;
-=======
+
+
 .uploadmain{
   text-align: center;
 }
 
 .uploadwrapper{
-  width: 75%;
+  width: 60%;
   margin-right:auto;
   margin-left:auto;
   margin-top:20px;
   border: 5px solid black;
   padding: 10px;
-  background-color: aquamarine;
+  
+  background-size: cover;
+  background-color: #06568D;
+  
+  
+}
+
+#headerbtn{
+  font-family: sans-serif;
+  
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#uploadbtn{
+  font-family: sans-serif;
+  
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: right ;
 }
 
 .button{
@@ -78,12 +114,15 @@ h1{
   
 }
 
-.editor{
+#editor{
   border: solid black 2px;
   height: 500px;
-  width: 800px;
-  margin: 15px;
-  
+  width: 600px;
+  margin: auto;
+  background-color:white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  border-radius: 10px ;
 }
 
 .uploadtable{
@@ -100,5 +139,10 @@ td, th{
   font-family: courier;
   color: black;
   table-layout: fixed;
->>>>>>> b2ff30c28b1b2f78998f44df7605884c6b00d4fa
+
+}
+
+[contentEditable=true]:empty:not(:focus):before{
+  content:attr(data-text)
+
 }
