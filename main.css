@@ -2,45 +2,6 @@
     text-align: center;
     color: aliceblue
 }
-/* shawn testing search button css*/
-{
-    box-sizing: border-box;
-  }
-  
-  /* Style the search field */
-  form.example input[type=text] {
-    padding: 10px;
-    font-size: 12px;
-    border: 1px solid grey;
-    float: right;
-    width: 100%;
-    background: #f1f1f1;
-  }
-  
-  /* Style the submit button */
-  form.example button {
-    float: right;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 12px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
-  }
-  
-  form.example button:hover {
-    background: #0b7dda;
-  }
-  
-  /* Clear floats */
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-            /* end shawns search button css */
 
 /* Navigation */
 * {
@@ -165,3 +126,13 @@ header {
     display: initial;
   }
 }
+
+input{
+  float: right;
+  padding: 3px;
+  border: none;
+  margin-top: 4px;
+  margin-right: 5px;
+  font-size: 17px;
+}
+
