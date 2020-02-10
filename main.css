@@ -1,13 +1,8 @@
-﻿.top_bar{
-    background-color: #343333;
-}
-
-h1{
-    color: white;
+﻿h1{
     text-align: center;
+    color: aliceblue
 }
-
-            /* shawn testing search button css*/
+/* shawn testing search button css*/
 {
     box-sizing: border-box;
   }
@@ -18,14 +13,14 @@ h1{
     font-size: 12px;
     border: 1px solid grey;
     float: right;
-    width: 20%;
+    width: 100%;
     background: #f1f1f1;
   }
   
   /* Style the submit button */
   form.example button {
     float: right;
-    width: 5%;
+    width: 20%;
     padding: 10px;
     background: #2196F3;
     color: white;
@@ -48,68 +43,125 @@ h1{
             /* end shawns search button css */
 
 /* Navigation */
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-li {
-    float: left;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #24252a;
 }
 
-    li a, .dropbtn {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
+.logo {
+  cursor: pointer;
+}
 
-        li a:hover, .dropdown:hover .dropbtn {
-            background-color: red;
-        }
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
 
-    li.dropdown {
-        display: inline-block;
-    }
+.nav__links {
+  list-style: none;
+  display: flex;
+}
 
-.dropdown-content {
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
     display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-<<<<<<< Updated upstream
-.dropdown-content a {
-=======
-    .dropdown-content a {
->>>>>>> Stashed changes
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
-
-<<<<<<< Updated upstream
-.dropdown-content a:hover {
-        background-color: #f1f1f1;
-=======
-        .dropdown-content a:hover {
-            background-color: #f1f1f1;
->>>>>>> Stashed changes
-        }
-
-.dropdown:hover .dropdown-content {
-    display: block;
+  }
+  .menu {
+    display: initial;
+  }
 }
