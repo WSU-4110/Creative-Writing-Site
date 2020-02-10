@@ -7,44 +7,36 @@
         <meta name="viewport" content="width=device-width, initial scale=1.0">
     </head>
     <body>
-        <div class ="top_bar">
-        <h1>Writely</h1>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<<<<<<< Updated upstream
+        
+        <header>
+            <h1>Writely</h1>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </nav>
             <form class="example" action="action_page.php">
-=======
 
-	<div>
-	<ul>
-	    <ul>
-            <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </li>
-        </ul>
-
-    <!-- The form for the button-->
-    <form class="example" action="action_page.php">
->>>>>>> Stashed changes
     <input type="text" placeholder="Search for books, blogs, authors..." name="search">
     <button type="submit"><i class="fa fa-search"></i></button>
     </form>
-        <ul>
-            <li>
-                <a href="javascript:void(0)" class="dropbtn">Menu</a>
-                <div class="dropdown-content">
-                    <a href="#">Home</a>
-                    <a href="#">Profile</a>
-                    <a href="#">Explore</a>
-                    <a href="#">Upload</a>
-                </div>
-            </li>
-        </ul>
+            <p onclick="openNav()" class="menu cta">Menu</p>
+        </header>
+        
+        <div id="mobile__menu" class="overlay">
+            <a class="close" onclick="closeNav()">&times;</a>
+            <div class="overlay__content">
+                <a href="Project.html">Home</a>
+                <a href="#">Explore</a>
+                <a href="#">Profile</a>
+            </div>
         </div>
+        <script type="text/javascript" src="mobile.js"/>
+
+    <!-- The form for the button-->
+    
 
     </body>
 </html>
