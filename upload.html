@@ -94,22 +94,27 @@
                         //buttons for text editor
                         $('#boldbtn').on('click', function(){
                             document.execCommand('bold');
+                            $('#editor').focus();
                         });
 
                         $('#italicbtn').on('click', function(){
                             document.execCommand('italic');
+                            $('#editor').focus();
                         });
 
                         $('#underbtn').on('click', function(){
                             document.execCommand('underline');
+                            $('#editor').focus();
                         });
 
                         $("#fs").change(function(){
                             $('#editor').css("font-family", $(this).val());
+                            $('#editor').focus();
                         })
 
                         $("#size").change(function(){
                             $('#editor').css("font-size", $(this).val() + "px");
+                            $('#editor').focus();
                         })
                     });
                 </script>
