@@ -21,7 +21,7 @@
   padding: 10px;
   
   background-size: cover;
-  /*background-color: #06568D;*/
+  background-color: #24252a;
   border-radius: 10px;
   
 }
@@ -29,27 +29,27 @@
 /*write button*/
 #headerbtn{
   font-family: sans-serif;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  background-color:rgba(0, 0, 0, 0.521);
+  -webkit-text-fill-color: #000000;
+  -webkit-text-stroke-width: 0px;
+  background-color: white;
   padding: 14px 28px;
   font-size: 30px;
   cursor: pointer;
   display: inline-block;
+  border-radius: 10px;
 }
 
 #uploadbtn{
   font-family: sans-serif;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  background-color: rgba(0, 0, 0, 0.521);
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 0px;
+  background-color: white;
   padding: 14px 28px;
   font-size: 30px;
   cursor: pointer;
   display: inline-block;
   text-align: right ;
+  border-radius: 10px;
 }
 
 .button{
@@ -61,10 +61,9 @@
 #editor{
   border: solid black 2px;
   height: 500px;
-  width: 600px;
+  width: 700px;
   margin: auto;
   background-color:white;
-  font-family: 'Courier New', Courier, monospace;
   text-align: left;
   
 }
