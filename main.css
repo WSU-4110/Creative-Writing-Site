@@ -149,3 +149,7 @@ input{
   padding: 15px;
   margin-top: 20px;
 }
+img{
+    height: 24px;
+    width: 24px;
+}
