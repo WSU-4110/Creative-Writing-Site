@@ -1,6 +1,13 @@
-﻿h1{
+﻿#logo{
     text-align: center;
-    color: aliceblue
+    color: aliceblue;
+    font-size: 32px;
+    
+}
+
+h1{
+    text-align: center;
+    color: black
 }
 
 /* Navigation */
@@ -134,4 +141,8 @@ input{
   margin-top: 4px;
   margin-right: 5px;
   font-size: 17px;
+}
+
+.post{
+    
 }
