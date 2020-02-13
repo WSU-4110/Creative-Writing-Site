@@ -1,6 +1,13 @@
+#logo{
+    text-align: center;
+    color: aliceblue;
+    font-size: 32px;
+    
+}
+
 h1{
     text-align: center;
-    color: aliceblue
+    color: black
 }
 
 /* Navigation */
