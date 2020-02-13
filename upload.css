@@ -61,10 +61,9 @@
 #editor{
   border: solid black 2px;
   height: 500px;
-  width: 600px;
+  width: 700px;
   margin: auto;
   background-color:white;
-  font-family: 'Courier New', Courier, monospace;
   text-align: left;
   
 }
