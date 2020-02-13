@@ -51,6 +51,19 @@
   border-radius: 10px;
 }
 
+#submitbtn.button{
+  padding: 5px;
+  margin-top:10px;
+  margin-bottom: 5px;
+}
+
+#fs{
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+
+
 .button{
   width: auto;
   text-align: center;
@@ -59,12 +72,16 @@
 
 #editor{
   border: solid black 2px;
-  height: 500px;
-  width: 700px;
+  /*height: 500px;
+  width: 700px;*/
+  width: 60%;
+  height: 100%;
+  padding: 8px;
   margin: auto;
+  margin-bottom: 10px;
   background-color:white;
   text-align: left;
-  
+  box-sizing: border-box;
 }
 
 .uploadtable{

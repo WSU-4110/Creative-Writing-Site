@@ -76,6 +76,7 @@
                 </table>
                 
                 <div id="editor" contenteditable="true" data-text="Enter text here..."></div>
+                
                 <button class="button" id="submitbtn" type="submit">Submit</button>
 
 
@@ -91,7 +92,7 @@
 
                         $('#headerbtn').on('click', function(){
                             $("#editor").slideToggle(300);
-                            $(".uploadtable").slideToggle(300);
+                            $(".uploadtable").fadeToggle(300);
                             $("#submitbtn").slideToggle(300);
                         })
 
