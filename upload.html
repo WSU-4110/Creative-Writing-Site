@@ -76,7 +76,7 @@
                 </table>
                 
                 <div id="editor" contenteditable="true" data-text="Enter text here..."></div>
-                <button class="button" id="submitbtn" type="submit">Submit</button>
+                <button class="button" id="submitbtn" type="submit" onclick="getinputvalue();">Submit</button>
 
                 
 
@@ -89,6 +89,16 @@
 
 
                 <script  src="jquery-3.4.1.js"></script>
+                <script>
+                    function getinputvalue(){
+                        // Selecting the input element and get its value 
+                        var inputVal = document.getElementById("div.editor").value;
+                        
+                        // Displaying the value
+                        alert(inputVal);
+                    }
+                    
+                </script>
                 
         
                 <!--scripts to handle the text formatting buttons-->
@@ -132,9 +142,9 @@
                         });
 
                         $("#submitbtn").click(function(){
-                            input = $("container div.editor").val();
-                            $('container div.editor').val(input);
-                            alert(input);
+                            //input = $("#editor").val();
+                            //$("#editor").val(input);
+                            alert($("#editor").val());
                         });
                     });
                 </script>
