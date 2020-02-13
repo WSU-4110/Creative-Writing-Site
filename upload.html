@@ -78,18 +78,9 @@
                 <div id="editor" contenteditable="true" data-text="Enter text here..."></div>
                 <button class="button" id="submitbtn" type="submit">Submit</button>
 
-                
-
-
-
-
-
-
-
-
 
                 <script  src="jquery-3.4.1.js"></script>
-                
+                               
         
                 <!--scripts to handle the text formatting buttons-->
                 <script>
@@ -132,8 +123,7 @@
                         });
 
                         $("#submitbtn").click(function(){
-                            input = $("container div.editor").val();
-                            $('container div.editor').val(input);
+                            var input = $("#editor").html();
                             alert(input);
                         });
                     });
