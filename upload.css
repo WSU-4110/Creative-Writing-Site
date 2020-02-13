@@ -1,0 +1,146 @@
+﻿#top_bar{
+    background-color: black;
+}
+
+h1{
+    font-size: 16px;
+    color: black;
+    text-align: center;
+}
+
+            /* shawn testing search button css*/
+
+  
+  /* Style the search field */
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid grey;
+    float: right;
+    width: 20%;
+    background: #f1f1f1;
+  }
+
+
+  
+  /* Style the submit button */
+  form.example button {
+    float: right;
+    width: 5%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 12px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+            /* end shawns search button css */
+
+
+/* this class is for account creation page */
+
+
+#header1{
+  font-size: 30px;
+  font-family:'Courier New';
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+
+
+.uploadmain{
+  text-align: center;
+}
+
+.uploadwrapper{
+  width: 60%;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:20px;
+  border: 5px solid black;
+  padding: 10px;
+  
+  background-size: cover;
+  background-color: #06568D;
+  border-radius: 10px;
+  
+}
+
+/*write button*/
+#headerbtn{
+  font-family: sans-serif;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#uploadbtn{
+  font-family: sans-serif;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: right ;
+}
+
+.button{
+  width: auto;
+  text-align: center;
+  padding:1px 3px;
+}
+
+#editor{
+  border: solid black 2px;
+  height: 500px;
+  width: 600px;
+  margin: auto;
+  background-color:white;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left;
+  
+}
+
+.uploadtable{
+	margin-right: auto;
+	margin-left:auto;
+	padding: 30px;
+	text-align: center;
+	border-collapse: collapse;
+}
+
+td, th{
+  padding: 10px;
+  text-align: center;
+  font-family: courier;
+  color: black;
+  table-layout: fixed;
+
+}
+
+[contentEditable=true]:empty:not(:focus):before{
+  content:attr(data-text)
+
+}
