@@ -8,6 +8,12 @@ h1{
   text-align: center;
 }
 
+h2{
+  font-size: 16px;
+  color: black;
+  text-align: left;
+}
+
 /* shawn testing search button css*/
 {
   box-sizing: border-box;
