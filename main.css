@@ -149,11 +149,10 @@ input{
   border: 1.5px solid black;
   padding: 15px;
   margin-top: 20px;
-    background-color: white;
+  background-color: white;
 }
 
 body {
   background-image: url('background.jpg');
-    background-size: ;
 }
 
