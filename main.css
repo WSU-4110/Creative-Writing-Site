@@ -1,4 +1,5 @@
-#propage_center{ margin-left: 200px; }
+#propage_center{ margin-left: 200px;
+		padding: 5px; }
 #profile_image{float: left; 
 	        margin: 0 0 5px 5 px;
 		position: relative;}
