@@ -148,11 +148,8 @@ input{
   border: 1.5px solid black;
   padding: 15px;
   margin-top: 20px;
-    background-color: white;
-}
-img{
-    height: 24px;
-    width: 24px;
+  background-color: white;
+  margin-bottom: 10px;
 }
 
 body {
