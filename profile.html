@@ -7,28 +7,31 @@
         <meta name="viewport" content="width=device-width, initial scale=1.0">
     </head>
     <body>
-        <div ="top_bar">
+       <header>
+        <h1>Writely</h1>
+         <nav>
+	   <ul>
+	     <li><a href="project.html">Home</a></li>
+	      <li><a href="profile.html">Profile</a></li>
+	      <li><a href="explorer.html">Explorer</a></li>
+	      <li><a href="about.html">About</a></li>
+	      <li><a href="contact.html">Contact</a></li>
+	      <li><a href="upload.html">Upload</a></li>
+	  </ul>
+        </nav>	
+	<input type="text" placeholder="search..">
+      </header>
 
-        </div>
-        <h1>Welcome to Writely</h1>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<div>
-	<ul>
-	   <li><a href="project.html">Home</a></li>
-	    <li><a href="profile.html">Profile</a></li>
-	    <li><a href="explorer.html">Explorer</a></li>
-	    <li><a href="about.html">About</a></li>
-	    <li><a href="contact.html">Contact</a></li>
-	    <li><a href="upload.html">Upload</a></li>
-	</ul>
+    <div id = "mobile_menu" class="overlay">
+	<a class="close" onclick="closenav()">&times;</a>
+	<div class="overlay_content">
+	        <a href="Project.html">Home</a>
+                <a href="Explore.html">Explore</a>
+                <a href="Profile.html">Profile</a>
+                <a href="upload.html">Upload</a>
 	</div>
-
-    <!-- The form for the button-->
-    <form class="example" action="action_page.php">
-    <input type="text" placeholder="Search for books, blogs, authors..." name="search">
-    <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
+    </div>
+    <script type="text/javascript" src="mobile.js"/>
     </body>
 
    <footer>
