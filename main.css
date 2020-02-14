@@ -161,3 +161,16 @@ input{
 body {
   background-image: url('wood%20background.jpg');
 }
+
+.footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+a{
+    color: white;
+}
+a:hover{
+    color:aqua;
+}
