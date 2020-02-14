@@ -1,13 +1,19 @@
+#propage_center{ margin-left: 200px;
+		padding: 5px; }
+#profile_image{float: left; 
+	        margin: 0 0 5px 5 px;
+		position: relative;}
 #logo{
     text-align: center;
     color: aliceblue;
-    font-size: 32px;
-}
-
+    font-size: 32px; }
+footer{font-style: italic;
+	font-size: .80em;
+	text-align: center;
+	padding: 0.5em; }
 h1{
     text-align: center;
-    color: black
-}
+    color: black;}
 
 /* Navigation */
 * {
@@ -148,11 +154,8 @@ input{
   border: 1.5px solid black;
   padding: 15px;
   margin-top: 20px;
-    background-color: white;
-}
-img{
-    height: 24px;
-    width: 24px;
+  background-color: white;
+  margin-bottom: 10px;
 }
 
 body {

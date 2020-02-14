@@ -19,7 +19,6 @@
   margin-top:20px;
   border: 5px solid black;
   padding: 10px;
-  
   background-size: cover;
   background-color: #24252a;
   border-radius: 10px;
@@ -37,6 +36,7 @@
   cursor: pointer;
   display: inline-block;
   border-radius: 10px;
+  text-align: left;
 }
 
 #uploadbtn{
@@ -52,20 +52,49 @@
   border-radius: 10px;
 }
 
+#submitbtn.button{
+  padding: 5px;
+  margin-top:10px;
+  margin-bottom: 5px;
+}
+
+#fs{
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+
+
 .button{
   width: auto;
   text-align: center;
-  padding:1px 3px;
+  padding:10px;
+  border:none;
+  background-color: inherit;
+  color: white;
+  font-size: 20px;
 }
+
+.button:hover{
+  cursor:pointer;
+  background-color:  rgba(138, 138, 138, 0.534);
+}
+
+
 
 #editor{
   border: solid black 2px;
-  height: 500px;
-  width: 700px;
+  /*height: 500px;
+  width: 700px;*/
+  width: 60%;
+  height: 100%;
+  padding: 8px;
   margin: auto;
+  margin-bottom: 10px;
   background-color:white;
   text-align: left;
-  
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .uploadtable{
@@ -82,7 +111,16 @@ td, th{
   font-family: courier;
   color: black;
   table-layout: fixed;
+}
 
+tr{
+  border: solid rgba(138, 138, 138, 0.534) 3px;
+  border-radius: 10px;
+  display:block;
+  size: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
 }
 
 [contentEditable=true]:empty:not(:focus):before{

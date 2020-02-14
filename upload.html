@@ -76,20 +76,12 @@
                 </table>
                 
                 <div id="editor" contenteditable="true" data-text="Enter text here..."></div>
-                <button class="button" id="submitbtn" type="submit">Submit</button>
-
                 
-
-
-
-
-
-
-
+                <button class="button" id="submitbtn" type="submit">Submit</button>
 
 
                 <script  src="jquery-3.4.1.js"></script>
-                
+                               
         
                 <!--scripts to handle the text formatting buttons-->
                 <script>
@@ -100,8 +92,9 @@
 
                         $('#headerbtn').on('click', function(){
                             $("#editor").slideToggle(300);
-                            $(".uploadtable").slideToggle(300);
+                            $(".uploadtable").fadeToggle(300);
                             $("#submitbtn").slideToggle(300);
+                            $("#uploadbtn").fadeToggle(300);
                         })
 
 
@@ -132,8 +125,7 @@
                         });
 
                         $("#submitbtn").click(function(){
-                            input = $("container div.editor").val();
-                            $('container div.editor').val(input);
+                            var input = $("#editor").html();
                             alert(input);
                         });
                     });
