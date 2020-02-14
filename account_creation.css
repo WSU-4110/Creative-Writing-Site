@@ -80,6 +80,28 @@ form.email_input input[type=text] {
   background: #f1f1f1;
 }
 
+/* username input button */
+form.username_input button {
+  float: center;
+  width: 5%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 12px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+/* style the email input box*/
+form.username_input input[type=text] {
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid grey;
+  float: none;
+  width: 20%;
+  background: #f1f1f1;
+}
+
 form.example button:hover {
   background: #0b7dda;
 }
