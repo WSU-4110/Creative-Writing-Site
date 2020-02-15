@@ -2,12 +2,16 @@
 <html lang="en">
     <head>
         <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="upload.css">
+        <link rel="stylesheet" href="reading.css">
+        <script  src="jquery-3.4.1.js"></script>
+        <script type="text/javascript" src="mobile.js"></script>
         <title>Writely</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
     </head>
-    <body>
+
+
+    <body onload="fillInput()">
         <div id="page-container">
         <div id="content-wrap">
         <header>
@@ -33,13 +37,31 @@
                 <a href="upload.html">Upload</a>
             </div>
         </div>
-        <script type="text/javascript" src="mobile.js"></script>
+        
+
+
+
+        
 
 
         <script>
-            var reading = sessionStorage.getItem("writing");
-            alert(reading);
+            function fillInput(){
+                var reading = sessionStorage.getItem("writing");
+            
+                //setting the reading variable to the p tag
+                $(document).ready(function(){
+                    $("p1").html(reading);
+                });
+            }
         </script>
+
+    
+        <h1><br>Your Submission</h1>
+        <div id="readingwrapper">
+            <p1></p1> <!--this is for the output of the text variable from the other page-->
+        </div>
+            
+        
 
 
 
