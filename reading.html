@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="upload.css">
+        <title>Writely</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+    </head>
+    <body>
+        <div id="page-container">
+        <div id="content-wrap">
+        <header>
+            <div id="logo">Writely</div>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="Project.html">Home</a></li>
+                    <li><a href="Explore.html">Explore</a></li>
+                    <li><a href="Profile.html">Profile</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="account_creation.html">Sign-Up</a></li>
+                </ul>
+            </nav>
+            <input type="text" placeholder="Search..">
+        </header>
+        
+        <div id="mobile__menu" class="overlay">
+            <a class="close" onclick="closeNav()">&times;</a>
+            <div class="overlay__content">
+                <a href="Project.html">Home</a>
+                <a href="Explore.html">Explore</a>
+                <a href="Profile.html">Profile</a>
+                <a href="upload.html">Upload</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="mobile.js"></script>
+
+
+        <script>
+            var reading = sessionStorage.getItem("writing");
+            alert(reading);
+        </script>
+
+
+
+        <div class="end_footer">
+            Contact us!<br>
+            Send us an <a href= "mailto:writely@gmail.com">e-mail!</a><br>
+            <small><i>Copyright &copy; 2020 Writely</i></small><br> </div>
+            
+    </div>
+    </div>  
+    </body>
+</html>
+
