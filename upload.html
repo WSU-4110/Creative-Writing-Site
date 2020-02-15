@@ -80,6 +80,7 @@
                 
                 <a href="reading.html" class="button" id="submitbtn" type="submit">Submit</a>
 
+                <input type="file" id="fileupload">
 
                 <script  src="jquery-3.4.1.js"></script>
                                
@@ -90,12 +91,17 @@
                         $("#editor").hide();
                         $(".uploadtable").hide();
                         $("#submitbtn").hide();
+                        $("#fileupload").hide();
 
                         $('#headerbtn').on('click', function(){
                             $(".uploadtable").fadeToggle(300);
                             $("#editor").fadeToggle(300);                            
                             $("#submitbtn").fadeToggle(300);
                             $("#uploadbtn").fadeToggle(300);
+                        })
+
+                        $("#uploadbtn").on('click', function(){
+                            $("#fileupload").fadeToggle(300);
                         })
 
 

@@ -63,7 +63,15 @@
   padding-bottom: 3px;
 }
 
-
+#fileupload{
+  border: solid rgba(138, 138, 138, 0.534) 3px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  float: none;
+  color: white;
+}
 
 .button{
   width: auto;
