@@ -84,10 +84,8 @@
 
 #editor{
   border: solid black 2px;
-  /*height: 500px;
-  width: 700px;*/
-  width: 60%;
-  height: 100%;
+  width: 70%;
+  min-height: 200px;
   padding: 8px;
   margin: auto;
   margin-bottom: 10px;
@@ -95,6 +93,7 @@
   text-align: left;
   box-sizing: border-box;
   border-radius: 10px;
+  display: block;
 }
 
 .uploadtable{
