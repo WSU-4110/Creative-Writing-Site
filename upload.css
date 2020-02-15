@@ -30,7 +30,7 @@
   font-family: sans-serif;
   -webkit-text-fill-color: #000000;
   -webkit-text-stroke-width: 0px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.87);
   padding: 14px 28px;
   font-size: 30px;
   cursor: pointer;
@@ -43,7 +43,7 @@
   font-family: sans-serif;
   -webkit-text-fill-color: black;
   -webkit-text-stroke-width: 0px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.87);
   padding: 14px 28px;
   font-size: 30px;
   cursor: pointer;
@@ -58,9 +58,11 @@
   margin-bottom: 5px;
 }
 
-#fs{
-  padding-top: 3px;
-  padding-bottom: 3px;
+#size, #fs{
+  padding:5px;
+  border: solid rgba(138, 138, 138, 0.534) 2px;
+  background-color: #24252a;
+  color: white;
 }
 
 #fileupload{
@@ -88,8 +90,13 @@
   background-color:  rgba(138, 138, 138, 0.534);
 }
 
+.button:active{
+  background-color: rgba(138, 138, 138, 0.534);
+}
 
-
+.gray{
+  background-color: rgba(138, 138, 138, 0.534);
+}
 
 
 #editor{
@@ -124,7 +131,7 @@ td, th{
 
 tr{
   border: solid rgba(138, 138, 138, 0.534) 3px;
-  border-radius: 10px;
+  border-radius: 0px;
   display:block;
   size: 50%;
   margin-top: 10px;

@@ -43,7 +43,7 @@
         <div class="uploadwrapper"> 
             <main class="uploadmain">
                 <h1 id='header1'>
-                    <button id='headerbtn'>WRITE</button> <button id='uploadbtn'>UPLOAD</button>
+                    <button id='headerbtn'>WRITE</button> <button id='uploadbtn'>UPLOAD FILE</button>
                 </h1>
 
 
@@ -109,18 +109,21 @@
 
                         //buttons for text editor
                         $('#boldbtn').on('click', function(){
-                            document.execCommand('bold');
                             $('#editor').focus();
+                            document.execCommand('bold');
+                            $(this).toggleClass("gray");
                         });
 
                         $('#italicbtn').on('click', function(){
-                            document.execCommand('italic');
                             $('#editor').focus();
+                            document.execCommand('italic');                            
+                            $(this).toggleClass("gray");
                         });
 
                         $('#underbtn').on('click', function(){
-                            document.execCommand('underline');
                             $('#editor').focus();
+                            document.execCommand('underline');                            
+                            $(this).toggleClass("gray");
                         });
 
                         $("#fs").change(function(){
