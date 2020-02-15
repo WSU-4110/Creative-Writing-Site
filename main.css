@@ -190,3 +190,12 @@ a:hover{
   padding-bottom: 2.5rem;    /* Footer height */
 }
 
+.side_bar{
+    background-color: #24252a;
+    color:white;
+    float:left;
+    width:20%;
+    border: 1.5px solid white;
+    margin: 20px;
+    padding: 10px;
+}
