@@ -42,29 +42,34 @@
 
 
         
-
-
-        <script>
-            function fillInput(){
-                var reading = sessionStorage.getItem("writing");
-            
-                //setting the reading variable to the p tag
-                $(document).ready(function(){
-                    $("p1").html(reading);
-                });
-            }
-        </script>
-
-    
-        <h1><br>Your Submission</h1>
         <div id="readingwrapper">
-            <p1></p1> <!--this is for the output of the text variable from the other page-->
-        </div>
+            <h1><br>Your Submission</h1>
+            <div id="post">
+                <p1></p1> <!--this is for the output of the text variable from the other page-->
+            </div>
+                
+            <br><br>
             
+            <p>
+                Post Status:
+            </p>
+            <br>
+            <label class="container">Public
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+                </label>
+                <label class="container">Private
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+                </label>
+        
+        </div>
+
         
 
-
-
+    
+        
+        
         <div class="end_footer">
             Contact us!<br>
             Send us an <a href= "mailto:writely@gmail.com">e-mail!</a><br>
@@ -73,5 +78,17 @@
     </div>
     </div>  
     </body>
+
+    <script>
+        function fillInput(){
+            var reading = sessionStorage.getItem("writing");
+        
+            //setting the reading variable to the p tag
+            $(document).ready(function(){
+                $("p1").html(reading);
+            });
+        }
+    </script>
+
 </html>
 
