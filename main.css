@@ -161,3 +161,32 @@ input{
 body {
   background-image: url('wood%20background.jpg');
 }
+
+.end_footer{
+    text-align: center;
+    background-color: #24252a;
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    height:2.5 rem;
+    margin-top: 15px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color:aqua;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
