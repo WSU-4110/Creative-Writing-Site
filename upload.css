@@ -13,7 +13,7 @@
 }
 
 .uploadwrapper{
-  width: 60%;
+  width: 35%;
   margin-right:auto;
   margin-left:auto;
   margin-top:20px;
@@ -22,7 +22,18 @@
   background-size: cover;
   background-color: #24252a;
   border-radius: 10px;
-  
+}
+
+.uploadwrapper2{
+  width: 55%;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:20px;
+  border: 5px solid black;
+  padding: 10px;
+  background-size: cover;
+  background-color: #24252a;
+  border-radius: 10px;
 }
 
 /*write button*/
@@ -32,7 +43,7 @@
   -webkit-text-stroke-width: 0px;
   background-color: rgba(255, 255, 255, 0.87);
   padding: 14px 28px;
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   display: inline-block;
   border-radius: 10px;
@@ -45,7 +56,7 @@
   -webkit-text-stroke-width: 0px;
   background-color: rgba(255, 255, 255, 0.87);
   padding: 14px 28px;
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   display: inline-block;
   text-align: right ;
@@ -101,7 +112,7 @@
 
 #editor{
   border: solid black 2px;
-  width: 70%;
+  width: 80%;
   min-height: 200px;
   padding: 8px;
   margin: auto;
