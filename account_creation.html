@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="main.css">
-        <title>Create an account</title>
-        
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
-    </head>
-    <body>
-        <div ="top_bar">
 
+<head>
+    <link rel="stylesheet" href="account_creation.css">
+    <title>Create an account: Writely</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+</head>
+
+<body>
+    <div id="login_box">
+        <div class="left_box">
+            <h1>Start Writing Today!</h1>
+            <!--buttons to input username, email, password, and verify password-->
+            <input type="text" name="username" placeholder="username123" />
+            <input type="text" name="email" placeholder="email@domain.com" />
+            <input type="password" name="password" placeholder="password" />
+            <input type="password" name="password_verification" placeholder="retype password" />
+            <!--submit button-->
+            <input type="submit" name="submit" value="Sign Up" />
         </div>
-        <h1>Create an account and start writing today!</h1>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<div>
+        <div class="right_box">
+            <!--buttons for social media login-->
+            <span class="Signinwith"> Sign in with social media!<br></span>
+            <button class="Social facebook">Log in with Facebook</button>
+            <button class="Social google">Log in with your Google Account</button>
+            <button class="Social twitter">Log in with Twitter</button>
+        </div>
+    </div>
 
 
-	</div>
 
-    <!-- The form for the button-->
-    <form class="example" action="action_page.php">
-    <input type="text" placeholder="Search for books, blogs, authors..." name="search">
-    <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-    </body>
+</body>
+
 </html>
