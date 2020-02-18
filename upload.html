@@ -75,11 +75,11 @@
                     </tr> 
                 </table>
                 
-                <div id="editor" contenteditable="true" data-text="Enter text here..."></div>
+                <div id="editor" contenteditable="true" data-text="Enter text here..." required></div>
 
                 <input type="file" id="fileupload" accept=".txt">
 
-                <a href="reading.html" class="button" id="submitbtn" type="submit"><br>Submit</a>
+                <a href="reading.html" class="button" id="submitbtn" type="submit">Submit</a>
 
                 <script  src="jquery-3.4.1.js"></script>
                                
@@ -140,6 +140,12 @@
                         $("#submitbtn").click(function(){
                             var writing = $("#editor").html();
                             sessionStorage.setItem("writing", writing);
+                            
+                            if(writing == ""){
+                                alert("Text box cannot be blank");
+                                return false;
+                            }
+
                         });
                     });
                     

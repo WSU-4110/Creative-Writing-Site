@@ -34,6 +34,13 @@ p1{
     color:black;
 }
 
+#titlebox{
+  border: 5px solid black;
+  width: fit-content;
+  margin-right:auto;
+  margin-left:auto;
+}
+
 /* Customize the label (the container) */
 .container {
   position: relative;
