@@ -6,7 +6,7 @@ body{
   color: #777;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
-  background-image: url(wood_wallpaper_2.png);
+  background-image: url(wood\ background.jpg);
 }
 
 #login_box{
