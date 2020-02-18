@@ -6,7 +6,7 @@ body{
   color: #777;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 300;
-
+  background-image: url(wood_wallpaper_2.png);
 }
 
 #login_box{
@@ -26,6 +26,7 @@ body{
   padding: 40px;
   width: 350px;
   height: 400px;
+  text-shadow: 0 2px 4px rgba(141, 139, 139, 0.7);
 }
 
 h1{
@@ -51,20 +52,11 @@ input[type="password"] {
   transition: 0.2s ease;
 }
 
-/*
-button[class="Facebook"]:hover,
-button[class="Gmail"]:hover,
-button[class="Twitter"]:hover
-{
-  background-color: rgb(0, 255, 242);
-  transition: 0.2s ease;
-}*/
-
 input[type="submit"]{
   margin-bottom: 28px;
   width: 120px;
   height: 32px;
-  background: #f44336;
+  background: #a35710;
   border: none;
   border-radius: 2px;
   color: #fff;
@@ -89,13 +81,41 @@ input[type="submit"]:focus
   box-sizing: 40px;
   width: 300px;
   height: 400px;
-  /*background-image: ADD IMAGE URL TO GITHUB AND THIS LINE*/
   background-size: cover;
 }
 
 .right_box .Signinwith {
   display: block;
+  margin-top: 40px;
   margin-bottom: 40px;
   font-size: 28px;
-  text-align: center;
+  text-align: center; 
+  text-shadow: 0 2px 4px rgba(141, 139, 139, 0.7);
+}
+
+button.Social {
+  margin-bottom: 20px;
+  margin-left: 40px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  transition: 0.2s ease;
+  font-weight: 500;
+  font-family: sans-serif;
+  cursor: pointer;
+
+}
+
+.facebook{
+  background: blue;
+}
+
+.google{
+  background: red;
+}
+
+.twitter{
+  background: lightblue;
 }
