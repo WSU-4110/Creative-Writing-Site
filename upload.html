@@ -75,7 +75,7 @@
                     </tr> 
                 </table>
                 
-                <div id="editor" contenteditable="true" data-text="Enter text here..."></div>
+                <div id="editor" contenteditable="true" data-text="Enter text here..." required></div>
 
                 <input type="file" id="fileupload" accept=".txt">
 
@@ -140,6 +140,12 @@
                         $("#submitbtn").click(function(){
                             var writing = $("#editor").html();
                             sessionStorage.setItem("writing", writing);
+                            
+                            if(writing == ""){
+                                alert("Text box cannot be blank");
+                                return false;
+                            }
+
                         });
                     });
                     
