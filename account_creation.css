@@ -1,3 +1,65 @@
+/* header css from main page*/
+#logo{
+  text-align: center;
+  color: aliceblue;
+  font-size: 32px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #24252a;
+}
+.logo {
+  cursor: pointer;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+input[type="top_text"]{
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+  padding: 4px;
+  width: 300px;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+/* end header css */
+
+
+/* begin account_creation page specific css */
 body{
   margin: 0;
   padding: 0;
