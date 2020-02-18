@@ -58,6 +58,20 @@ input[type="top_text"]{
 }
 /* end header css */
 
+/* begin footer css from main site */
+
+.end_footer{
+  text-align: center;
+  background-color: #24252a;
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  height:2.5 rem;
+  margin-top: 15px;
+}
+
+/* end footer css from main site */
 
 /* begin account_creation page specific css */
 body{
