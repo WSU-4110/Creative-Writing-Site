@@ -1,114 +1,82 @@
-#top_bar{
-  background-color: black;
+body{
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+  font-size: 16px;
+  color: #777;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+
+}
+
+#login_box{
+  position: relative;
+  margin: 5% auto;
+  height: 400px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);   
+}
+
+.left_box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 350px;
+  height: 400px;
 }
 
 h1{
-  font-size: 16px;
-  color: black;
-  text-align: center;
+  margin: 0 0 20px 0;
+  font-weight: lighter;
+  font-size: 28px;
 }
 
-h2{
-  font-size: 16px;
-  color: black;
-  text-align: left;
-}
-
-/* shawn testing search button css*/
-{
+input[type="text"],
+input[type="password"] {
+  display: block;
   box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 200px;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
 }
 
-/* Style the search field */
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 12px;
-  border: 1px solid grey;
-  float: right;
-  width: 20%;
-  background: #f1f1f1;
-}
+/*
+button[class="Facebook"]:hover,
+button[class="Gmail"]:hover,
+button[class="Twitter"]:hover
+{
+  background-color: rgb(0, 255, 242);
+  transition: 0.2s ease;
+}*/
 
-
-
-/* Style the submit button */
-form.example button {
-  float: right;
-  width: 5%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 12px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
+input[type="submit"]{
+  margin-bottom: 28px;
+  width: 120px;
+  height: 32px;
+  background: #f44336;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
   cursor: pointer;
 }
 
-form.example button:hover {
-  background: #0b7dda;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-/* end shawns search button css */
-
-/* style the user input buttons */
-
-/* email address button */
-form.email_button button {
-  float: center;
-  width: 5%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 12px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-}
-/* style the email input box*/
-form.email_input input[type=text] {
-  padding: 10px;
-  font-size: 12px;
-  border: 1px solid grey;
-  float: none;
-  width: 20%;
-  background: #f1f1f1;
-}
-
-/* username input button */
-form.username_input button {
-  float: center;
-  width: 5%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 12px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-}
-/* style the email input box*/
-form.username_input input[type=text] {
-  padding: 10px;
-  font-size: 12px;
-  border: 1px solid grey;
-  float: none;
-  width: 20%;
-  background: #f1f1f1;
-}
-
-form.example button:hover {
-  background: #0b7dda;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+  background-color: rgb(255, 136, 0);
+  transition: 0.2s ease;
+  
 }
