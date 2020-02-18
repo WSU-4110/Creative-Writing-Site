@@ -71,7 +71,6 @@ input[type="submit"]:focus
 {
   background-color: rgb(255, 136, 0);
   transition: 0.2s ease;
-  
 }
 
 .right_box{
@@ -105,17 +104,28 @@ button.Social {
   font-weight: 500;
   font-family: sans-serif;
   cursor: pointer;
-
 }
 
 .facebook{
   background: blue;
 }
+.facebook:hover{
+  background-color: lightblue;
+  transition: 0.2s ease;
+}
 
 .google{
   background: red;
 }
+.google:hover{
+  background-color: pink;
+  transition: 0.2s ease;
+}
 
 .twitter{
   background: lightblue;
+}
+.twitter:hover{
+  background-color: lightsteelblue;
+  transition: 0.2s ease;
 }
