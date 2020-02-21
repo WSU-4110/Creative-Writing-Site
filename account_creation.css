@@ -1,0 +1,207 @@
+/* header css from main page*/
+#logo{
+  text-align: center;
+  color: aliceblue;
+  font-size: 32px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #24252a;
+}
+.logo {
+  cursor: pointer;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+input[type="top_text"]{
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+  padding: 4px;
+  width: 300px;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+/* end header css */
+
+/* begin footer css from main site */
+
+.end_footer{
+  text-align: center;
+  background-color: #24252a;
+  color: white;
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  height:2.5 rem;
+  margin-top: 15px;
+}
+
+/* end footer css from main site */
+
+/* begin account_creation page specific css */
+body{
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+  font-size: 16px;
+  color: #777;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  background-image: url(wood\ background.jpg);
+}
+
+#login_box{
+  width: 600px;
+  position: relative;
+  margin: 5% auto;
+  height: 400px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);   
+}
+
+.left_box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 350px;
+  height: 400px;
+  text-shadow: 0 2px 4px rgba(141, 139, 139, 0.7);
+}
+
+h1{
+  margin: 0 0 20px 0;
+  font-weight: lighter;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 200px;
+  height: 32px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="submit"]{
+  margin-bottom: 28px;
+  width: 120px;
+  height: 32px;
+  background: #a35710;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+  background-color: rgb(255, 136, 0);
+  transition: 0.2s ease;
+}
+
+.right_box{
+  position:absolute;
+  top: 0;
+  right: 0;
+  box-sizing: 40px;
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+}
+
+.right_box .Signinwith {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 28px;
+  text-align: center; 
+  text-shadow: 0 2px 4px rgba(141, 139, 139, 0.7);
+}
+
+button.Social {
+  margin-bottom: 20px;
+  margin-left: 40px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  transition: 0.2s ease;
+  font-weight: 500;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.facebook{
+  background: blue;
+}
+.facebook:hover{
+  background-color: lightblue;
+  transition: 0.2s ease;
+}
+
+.google{
+  background: red;
+}
+.google:hover{
+  background-color: pink;
+  transition: 0.2s ease;
+}
+
+.twitter{
+  background: lightblue;
+}
+.twitter:hover{
+  background-color: lightsteelblue;
+  transition: 0.2s ease;
+}
