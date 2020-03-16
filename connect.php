@@ -7,7 +7,7 @@
 //(2)check to make sure username doesnt already exist
 //(3)check if email is already in the database. email must be unique
 //(4)validate email address by sending an email to new user
-
+//**(5) fix errors with "POST". it might be syntax from bootstrap. insetad, try: $username = filter_input(INPUT_POST,'username);
 
 //get values from account creation page
 $username=$POST['username'];
