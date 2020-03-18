@@ -1,7 +1,6 @@
 <?php
 //This file is used to connect newly registered users into the database, "accounts" under the table "users". This form is used alongside account_creation.php.
 
-
 //TODO: 
 //(1)create two instances of password for validation
 //(2)check to make sure username doesnt already exist
