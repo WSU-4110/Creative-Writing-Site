@@ -74,12 +74,15 @@
                         </th>
                     </tr> 
                 </table>
-                
-                <div id="editor" contenteditable="true" data-text="Enter text here..." required></div>
+                <!--form is to handle php things i think, still working on it-->
+                <form action="upload.php" method="get">
+                    <div id="editor" contenteditable="true" name="text-content" data-text="Enter text here..." required></div>
 
-                <input type="file" id="fileupload" accept=".txt">
+                    <input type="file" id="fileupload" accept=".txt">
 
-                <a href="reading.html" class="button" id="submitbtn" type="submit">Submit</a>
+                    <input href="reading.html" class="button" id="submitbtn" type="submit">Submit</a>
+                    
+                </form>
 
                 <script  src="jquery-3.4.1.js"></script>
                                
