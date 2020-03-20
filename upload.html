@@ -79,13 +79,13 @@
                 to sql table, going to figure out how to make it not show up-->
                     <div id="editor" contenteditable="true" data-text="Enter text here..." required></div>
                     <form action="upload.php" method="POST">
-                        <input type="text" id="content" name="content" style="display:none;" > 
-                        <input class="button" id="submitbtn" type="submit"></input>
+                        <input type="text" id="content" name="content" required style="visibility: hidden;"> 
+                        <input class="button" id="submitbtn" type="submit" style="float:none;"></input>
                     </form>
                     
                 
 
-                    <input type="file" id="fileupload" accept=".txt">
+                <input type="file" id="fileupload" accept=".txt">
 
                 
 
