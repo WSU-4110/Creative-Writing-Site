@@ -31,12 +31,16 @@
         <div class="left_box">
             <h1>Start Writing Today!</h1>
             <!--buttons to input username, email, password, and verify password-->
+            <form action="connect.php" method="POST">
             <input type="text" name="username" placeholder="username123" />
+            <input type ="text" name="firstname" placeholder="John" />
+            <input type="text" name="lastname" placeholder="Doe" />
             <input type="text" name="email" placeholder="email@domain.com" />
             <input type="password" name="password" placeholder="password" />
             <input type="password" name="password_verification" placeholder="retype password" />
             <!--submit button-->
             <input type="submit" name="submit" value="Sign Up" />
+            </form>
         </div>
 
         <div class="right_box">
