@@ -41,9 +41,7 @@
 
         
         <div id="readingwrapper">
-            <p>
-                Title: <input id="titlebox">
-            </p>
+        
             
             <div id="post">
                 <p1></p1> <!--this is for the output of the text variable from the other page-->
@@ -51,21 +49,30 @@
                 
             <br>
             <br>
-            <p>
-                Post Status:
-            </p>
-            <br>
-            <label class="container">Public
-                <input type="radio" checked="checked" name="radio">
-                <span class="checkmark"></span>
-                </label>
-                <label class="container">Private
-                <input type="radio" name="radio">
-                <span class="checkmark"></span>
-                </label>
-        
-                <br><br>
-                <a href="reading.html" class="button" id="submitbtn" type="submit">Submit</a>
+            
+            
+            <br>       
+                
+
+            <form action="upload.php" method="POST">
+                <p>
+                    Title: <input id="titlebox" name="title">
+                </p>
+
+                <br>
+
+                <p>
+                    Post Status:
+                </p>
+
+                <input type='radio' name='publicity' value='1' required>Public
+                <input type="radio" name='publicity' value='0' required>Private
+                
+                <br>
+
+                <input type="text" id="content" name="content" required style="visibility: hidden;" ><br>
+                <input class="button" id="submitbtn" type="submit" style="float:none;"></input>
+            </form>
 
             
         </div>
@@ -91,6 +98,7 @@
             //setting the reading variable to the p tag
             $(document).ready(function(){
                 $("p1").html(reading);
+                $('#content').val(reading);
             });
         }
     </script>

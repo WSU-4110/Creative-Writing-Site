@@ -37,7 +37,7 @@
 
     
 
-
+        
         <!--wrapper for the upload page-->
         <div class="uploadwrapper"> 
             <main class="uploadmain">
@@ -74,15 +74,17 @@
                         </th>
                     </tr> 
                 </table>
-                <!--form is to handle php things i think, still working on it-->
-                <form action="upload.php" method="get">
-                    <div id="editor" contenteditable="true" name="text-content" data-text="Enter text here..." required></div>
-
-                    <input type="file" id="fileupload" accept=".txt">
-
-                    <input href="reading.html" class="button" id="submitbtn" type="submit">Submit</a>
+                
+                <!--added this area for php functionality, divs need extra input tag to transfer 
+                to sql table, going to figure out how to make it not show up-->
+                    <div id="editor" contenteditable="true" data-text="Enter text here..." required></div>
+                    <a href="reading.html" id="submitbtn">Submit</a>
                     
-                </form>
+                
+
+                <input type="file" id="fileupload" accept=".txt">
+
+                
 
                 <script  src="jquery-3.4.1.js"></script>
                                
@@ -143,6 +145,10 @@
                         $("#submitbtn").click(function(){
                             var writing = $("#editor").html();
                             sessionStorage.setItem("writing", writing);
+
+                            $(document).ready(function(){
+                                $("#content").val(writing);
+                            });
                             
                             if(writing == ""){
                                 alert("Text box cannot be blank");
