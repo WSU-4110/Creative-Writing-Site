@@ -9,13 +9,59 @@
 //**(5) fix errors with "POST". it might be syntax from bootstrap. insetad, try: $username = filter_input(INPUT_POST,'username);
 
 //get values from account creation page
-$username=$POST['username'];
-$firstname=$POST['firstname'];
-$lastname=$POST['lastname'];
-$email=$POST['email'];
-$password=$POST['password'];
+$username=$_POST['username'];
+$firstname=$_POST['firstName'];
+$lastname=$_POST['lastName'];
+$email=$_POST['email'];
+$password=$_POST['password'];
 
 //check for entry error
+if(!empty($username) || !empty($firstname) || !empty($lastname) || !empty($email) || !empty($password)){
+    $host = "localhost";
+                    $dbuser="root";
+                    $dbpass="";
+                    $dbname="accounts";
+    
+                    //create connection
+                    $conn= new mysqli($host,$dbuser,$dbpass,$dbname);
+                     if(mysqli_connect_error()){
+                        die('Connect Error ('.mysqli_connect_errno() .')'.mysqli_connect_error());
+                    }
+                    else{
+                        $SELECT = "SELECT username From accounts Where username = ? Limit 1";
+                        $INSERT = "INSERT Into accounts (username, password, firstName, lastName, email) values(?,?,?,?,?)";
+                        
+                        $stmt = $conn->prepare($SELECT);
+                        $stmt->bind_param("s", $username);
+                        $stmt->execute();
+                        $stmt->bind_result($username);
+                        $stmt->store_result();
+                        
+                        $rnum = $stmt->num_rows;
+                        if($rnum == 0){
+                            $stmt->close();
+                            
+                            $stmt = $conn->prepare($INSERT);
+                            $stmt->bind_param("sssss", $username, $password, $firstName, $lastName, $email);
+                            $stmt->execute();
+                            echo "Sign up successful!";
+                        }
+                        else{
+                            echo "This username is already in use! :(";
+                        }
+                        $stmt->close();
+                        $conn->close();
+                    }
+}
+else{
+    echo "All entries are required!";
+    die();
+}
+
+
+
+
+/*
 if(!empty($username)){
     if(!empty($firstname)){
         if(!empty($lastname)){
@@ -24,7 +70,7 @@ if(!empty($username)){
                     $host = "localhost";
                     $dbuser="root";
                     $dbpass="";
-                    $dbname="accounts";
+                    $dbname="users";
                     
                     //create connection
                     $conn= new mysqli($host,$dbuser,$dbpass.$dbname);
@@ -74,4 +120,7 @@ else{//username entry error
     die();
     
 }
+*/
+
+
 ?>

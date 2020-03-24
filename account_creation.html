@@ -31,12 +31,16 @@
         <div class="left_box">
             <h1>Start Writing Today!</h1>
             <!--buttons to input username, email, password, and verify password-->
-            <input type="text" name="username" placeholder="username123" />
-            <input type="text" name="email" placeholder="email@domain.com" />
-            <input type="password" name="password" placeholder="password" />
-            <input type="password" name="password_verification" placeholder="retype password" />
+            <form action ="connect.php" method ="POST">
+            <input type="text" name="username" placeholder="username123" required />
+            <input type="password" name="password" placeholder="password" required />
+            <input type="password" name="password_verification" placeholder="retype password" required />
+            <input type="text" name="firstName" placeholder="Jane" required/>
+            <input type="text" name="lastName" placeholder="Dough" required />
+            <input type="text" name="email" placeholder="email@domain.com" required />
             <!--submit button-->
             <input type="submit" name="submit" value="Sign Up" />
+            </form>
         </div>
 
         <div class="right_box">
@@ -51,9 +55,6 @@
         Contact us!<br>
         Send us an <a href="mailto:writely@gmail.com">e-mail!</a><br>
         <small><i>Copyright &copy; 2020 Writely</i></small><br> </div>
-
-    </div>
-    </div>
 
 
 </body>
