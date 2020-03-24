@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="account_creation.css">
+    <link rel="stylesheet" href="login.css">
     <title>Create an account: Writely</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
@@ -40,10 +41,27 @@
             <input type="text" name="email" placeholder="email@domain.com" required />
             <!--submit button-->
             <input type="submit" name="submit" value="Sign Up" />
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:120px;">Login</button> 
             </form>
         </div>
 
         <div class="right_box">
+                  <div id="id01" class="loginbackg">
+                <div class="logincont animate">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    </div>
+
+                    <div class="container">
+                         <h1>Login with username!</h1>
+                        <form action="userLogin.php" method="POST">
+                            <input type="text" name="username" placeholder="username123" required />
+                            <input type="password" name="password" placeholder="password" required />
+                            <input type="submit" name="submit" value="Login" />
+                        </form>
+                    </div>
+                </div>
+            </div>
             <!--buttons for social media login-->
             <span class="Signinwith"> Sign in with social media!<br></span>
             <button class="Social facebook">Log in with Facebook</button>
