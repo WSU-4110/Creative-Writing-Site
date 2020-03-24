@@ -45,38 +45,42 @@
             
         <script type="text/javascript" src="mobile.js"></script>
         
-        <div class="post">
-            <img img src="Generic-Profile.png" alt="profile" height= 20px; width=20px;><b> John Doe:</b>
-            <div>
-                <?php
-                    $servername = "localhost";
-                    $username = "root";
-                    $password = "";
-                    $dbname = "upload";
+        
+            
+            
+        <?php
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "upload";
 
-                    // Create connection
-                    $conn = new mysqli($servername, $username, $password, $dbname);
-                    // Check connection
-                    if ($conn->connect_error) {
-                        die("Connection failed: " . $conn->connect_error);
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+            $sql = "SELECT id, content, Title, Publicity FROM post";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                // output data of each row
+                
+                while($row = $result->fetch_assoc()) {
+                    if($row["Publicity"] != 0){
+                        echo "<div class='post'><img img src='Generic-Profile.png' alt='profile' height= 20px; width=20px;><b> John Doe:</b><br>". $row["Title"]. ": <br>". $row["content"]. "</div>" ;
                     }
+                    
+                }
+            } else {
+                echo "0 results";
+            }
 
-                    $sql = "SELECT id, content FROM post";
-                    $result = $conn->query($sql);
-
-                    if ($result->num_rows > 0) {
-                        // output data of each row
-                        while($row = $result->fetch_assoc()) {
-                            echo "<br> id: ". $row["id"]. ": ". $row["content"];
-                        }
-                    } else {
-                        echo "0 results";
-                    }
-
-                    $conn->close();
-                ?>
-            </div>
-        </div>
+            $conn->close();
+        ?>
+            
+        
         
         <div class="post">
             <img img src="Generic-Profile.png" alt="profile" height= 20px; width=20px;><b> Jane Doe:</b>
