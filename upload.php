@@ -1,5 +1,9 @@
 <?php
     $content = $_POST['content'];
+    $title = $_POST['title'];
+    $publicity = $_POST['publicity'];
+
+
 
     $host = "localhost";
     $dbUsername = "root";
@@ -7,17 +11,21 @@
     $dbname = "upload";
     //create connection
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
+    
     if (mysqli_connect_error()) {
-     die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
+        die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
     } 
+
     else {
-     $insert = "INSERT Into post (content) VALUES ('$content')";
+     $insert = "INSERT Into post (content, Title, Publicity) VALUES ('$content', '$title', '$publicity')";
      //Prepare statement
      
      $stmt = $conn->prepare($insert);
-     $stmt->bind_param("s", $content);
+     $stmt->bind_param("ss,i", $content, $title, $publicity);
      $stmt->execute();
         echo $content;
+        echo $title;
+        echo $publicity;
         echo "New record created successfully";
     
     

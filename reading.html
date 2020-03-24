@@ -65,7 +65,18 @@
                 </label>
         
                 <br><br>
-                <a href="reading.html" class="button" id="submitbtn" type="submit">Submit</a>
+
+                <form action="upload.php" method="POST">
+                    <p>
+                        Title: <input id="titlebox" name="title">
+                    </p>
+
+                    <input type='radio' name='publicity' value='1' required>Public
+                    <input type="radio" name='publicity' value='0' required>Private
+
+                    <input type="text" id="content" name="content" required ><br>
+                    <input class="button" id="submitbtn" type="submit" style="float:none;"></input>
+                </form>
 
             
         </div>
@@ -91,6 +102,7 @@
             //setting the reading variable to the p tag
             $(document).ready(function(){
                 $("p1").html(reading);
+                $('#content').val(reading);
             });
         }
     </script>
