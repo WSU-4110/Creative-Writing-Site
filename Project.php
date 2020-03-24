@@ -27,7 +27,7 @@
         <div id="mobile__menu" class="overlay">
             <a class="close" onclick="closeNav()">&times;</a>
             <div class="overlay__content">
-                <a href="Project.html">Home</a>
+                <a href="Project.php">Home</a>
                 <a href="Explore.html">Explore</a>
                 <a href="Profile.html">Profile</a>
                 <a href="upload.html">Upload</a>
