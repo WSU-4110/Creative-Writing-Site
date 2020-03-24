@@ -80,12 +80,7 @@
             $conn->close();
         ?>
             
-        
-        
-        <div class="post">
-            <img img src="Generic-Profile.png" alt="profile" height= 20px; width=20px;><b> Jane Doe:</b>
-            <div data-lorem="2-4p"></div>
-        </div>
+    
         
          <div class="end_footer">
             Contact us!<br>
