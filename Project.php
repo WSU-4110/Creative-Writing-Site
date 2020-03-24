@@ -69,7 +69,7 @@
                 
                 while($row = $result->fetch_assoc()) {
                     if($row["Publicity"] != 0){
-                        echo "<div class='post'><img img src='Generic-Profile.png' alt='profile' height= 20px; width=20px;><b> John Doe:</b><br>". $row["Title"]. ": <br>". $row["content"]. "</div>" ;
+                        echo "<div class='post'><img img src='Generic-Profile.png' alt='profile' height= 20px; width=20px;><b> John Doe:</b><br><br><i>". $row["Title"]. ":</i> <br>". $row["content"]. "</div>" ;
                     }
                     
                 }
