@@ -29,7 +29,7 @@ if(!empty($username) || !empty($firstname) || !empty($lastname) || !empty($email
                     }
                     else{
                         $SELECT = "SELECT username From accounts Where username = ? Limit 1";
-                        $INSERT = "INSERT Into accounts (username, password, firstName, lastName, email) values(?,?,?,?,?)";
+                        $INSERT = "INSERT Into accounts (username, password, firstName, lastName, email) values('$username','$firstName','$lastName','$email','$password')";
                         
                         $stmt = $conn->prepare($SELECT);
                         $stmt->bind_param("s", $username);
