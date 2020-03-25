@@ -16,7 +16,7 @@ $email=$_POST['email'];
 $password=$_POST['password'];
 
 //check for entry error
-if(!empty($username) || !empty($firstname) || !empty($lastname) || !empty($email) || !empty($password)){
+if(!empty($username) || !empty($firstName) || !empty($lastName) || !empty($email) || !empty($password)){
     $host = "localhost";
                     $dbuser="root";
                     $dbpass="";
