@@ -43,10 +43,10 @@
             <?php
 
                 echo '<script type="text/JavaScript">
-                var Singleton = (function () {
+                var Connection = (function () {
                     var instance;
                 
-                    function createInstance() {
+                    function newInstance() {
                         var object = new Object("I am the instance");
                         var conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
                         return conn;
@@ -55,7 +55,7 @@
                     return {
                         getInstance: function () {
                             if (!instance) {
-                                instance = createInstance();
+                                instance = newInstance();
                             }
                             return instance;
                         }
@@ -67,7 +67,7 @@
                     var instance1 = Singleton.getInstance();
                     var instance2 = Singleton.getInstance();
                 
-                    alert("Same instance? " + (instance1 === instance2));  
+                    alert("Same instance of connection? " + (instance1 === instance2));  
                 }
             </script>';
 
