@@ -37,20 +37,52 @@
         </div>
 
 
+        
+
         <div style="text-align: center;">
             <?php
+
+                echo '<script type="text/JavaScript">
+                var Singleton = (function () {
+                    var instance;
+                
+                    function createInstance() {
+                        var object = new Object("I am the instance");
+                        var conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
+                        return conn;
+                    }
+                
+                    return {
+                        getInstance: function () {
+                            if (!instance) {
+                                instance = createInstance();
+                            }
+                            return instance;
+                        }
+                    };
+                })();
+                
+                function run() {
+                
+                    var instance1 = Singleton.getInstance();
+                    var instance2 = Singleton.getInstance();
+                
+                    alert("Same instance? " + (instance1 === instance2));  
+                }
+            </script>';
+
                 $content = $_POST['content'];
                 $title = $_POST['title'];
                 $publicity = $_POST['publicity'];
 
 
-
+                
                 $host = "localhost";
                 $dbUsername = "root";
                 $dbPassword = "";
                 $dbname = "upload";
                 //create connection
-                $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
+                
                 
                 if (mysqli_connect_error()) {
                     die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
@@ -61,7 +93,7 @@
                 //Prepare statement
                 
                 $stmt = $conn->prepare($insert);
-                $stmt->bind_param("sss", $content, $title, $publicity);
+                //$stmt->bind_param("sss", $content, $title, $publicity);
                 $stmt->execute();
                     
                 echo "New record created successfully";
