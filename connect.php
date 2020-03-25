@@ -10,8 +10,8 @@
 
 //get values from account creation page
 $username=$_POST['username'];
-$firstname=$_POST['firstName'];
-$lastname=$_POST['lastName'];
+$firstName=$_POST['firstName'];
+$lastName=$_POST['lastName'];
 $email=$_POST['email'];
 $password=$_POST['password'];
 
