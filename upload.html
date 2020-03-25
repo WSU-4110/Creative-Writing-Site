@@ -8,14 +8,23 @@
         <meta name="viewport" content="width=device-width, initial scale=1.0">
     </head>
     <body>
+<<<<<<< HEAD
     <div id="page-container">
     <div id="content-wrap">
+=======
+        <div id="page-container">
+        <div id="content-wrap">
+>>>>>>> Demo-2
         <header>
             <div id="logo">Writely</div>
             <nav>
                 <ul class="nav__links">
+<<<<<<< HEAD
                     <li><a href="Project.html">Home</a></li>
                     <li><a href="Explore.html">Explore</a></li>
+=======
+                    <li><a href="Project.php">Home</a></li>
+>>>>>>> Demo-2
                     <li><a href="Profile.html">Profile</a></li>
                     <li><a href="upload.html">Upload</a></li>
                     <li><a href="account_creation.html">Sign-Up</a></li>
@@ -28,9 +37,15 @@
             <a class="close" onclick="closeNav()">&times;</a>
             <div class="overlay__content">
                 <a href="Project.html">Home</a>
+<<<<<<< HEAD
                 <a href="Explore.html">Explore</a>
                 <a href="Profile.html">Profile</a>
                 <a href="upload.html">Upload</a>
+=======
+                <a href="Profile.html">Profile</a>
+                <a href="upload.html">Upload</a>
+                <a href="account_creation.html">Sign-Up</a>
+>>>>>>> Demo-2
             </div>
         </div>
         <script type="text/javascript" src="mobile.js"></script>
@@ -38,12 +53,20 @@
 
     
 
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> Demo-2
         <!--wrapper for the upload page-->
         <div class="uploadwrapper"> 
             <main class="uploadmain">
                 <h1 id='header1'>
+<<<<<<< HEAD
                     <button id='headerbtn'>WRITE</button> <button id='uploadbtn'>UPLOAD</button>
+=======
+                    <button id='headerbtn'>WRITE</button> <button id='uploadbtn'>UPLOAD FILE</button>
+>>>>>>> Demo-2
                 </h1>
 
 
@@ -76,10 +99,23 @@
                     </tr> 
                 </table>
                 
+<<<<<<< HEAD
                 <div id="editor" contenteditable="true" data-text="Enter text here..."></div>
                 
                 <button class="button" id="submitbtn" type="submit">Submit</button>
 
+=======
+                <!--added this area for php functionality, divs need extra input tag to transfer 
+                to sql table, going to figure out how to make it not show up-->
+                    <div id="editor" contenteditable="true" data-text="Enter text here..." required></div>
+                    <a href="reading.html" id="submitbtn">Submit</a>
+                    
+                
+
+                <input type="file" id="fileupload" accept=".txt">
+
+                
+>>>>>>> Demo-2
 
                 <script  src="jquery-3.4.1.js"></script>
                                
@@ -90,17 +126,36 @@
                         $("#editor").hide();
                         $(".uploadtable").hide();
                         $("#submitbtn").hide();
+<<<<<<< HEAD
 
                         $('#headerbtn').on('click', function(){
                             $("#editor").slideToggle(300);
                             $(".uploadtable").fadeToggle(300);
                             $("#submitbtn").slideToggle(300);
                             $("#uploadbtn").fadeToggle(300);
+=======
+                        $("#fileupload").hide();
+
+                        $('#headerbtn').on('click', function(){
+                            $(".uploadtable").fadeToggle(100);
+                            $("#editor").fadeToggle(100);                            
+                            $("#submitbtn").fadeToggle(100);
+                            $("#uploadbtn").fadeToggle(100);
+                            $(".uploadwrapper, .uploadwrapper2").toggleClass("uploadwrapper uploadwrapper2");
+                        })
+                        
+
+                        $("#uploadbtn").on('click', function(){
+                            $("#fileupload").fadeToggle(300);
+                            $("#headerbtn").fadeToggle(300);
+                            $("#submitbtn").fadeToggle(300);
+>>>>>>> Demo-2
                         })
 
 
                         //buttons for text editor
                         $('#boldbtn').on('click', function(){
+<<<<<<< HEAD
                             document.execCommand('bold');
                             $('#editor').focus();
                         });
@@ -113,6 +168,23 @@
                         $('#underbtn').on('click', function(){
                             document.execCommand('underline');
                             $('#editor').focus();
+=======
+                            $('#editor').focus();
+                            document.execCommand('bold');
+                            $(this).toggleClass("gray");
+                        });
+
+                        $('#italicbtn').on('click', function(){
+                            $('#editor').focus();
+                            document.execCommand('italic');                            
+                            $(this).toggleClass("gray");
+                        });
+
+                        $('#underbtn').on('click', function(){
+                            $('#editor').focus();
+                            document.execCommand('underline');                            
+                            $(this).toggleClass("gray");
+>>>>>>> Demo-2
                         });
 
                         $("#fs").change(function(){
@@ -126,10 +198,30 @@
                         });
 
                         $("#submitbtn").click(function(){
+<<<<<<< HEAD
                             var input = $("#editor").html();
                             alert(input);
                         });
                     });
+=======
+                            var writing = $("#editor").html();
+                            sessionStorage.setItem("writing", writing);
+
+                            $(document).ready(function(){
+                                $("#content").val(writing);
+                            });
+                            
+                            if(writing == ""){
+                                alert("Text box cannot be blank");
+                                return false;
+                            }
+
+                        });
+                    });
+                    
+                    
+                    
+>>>>>>> Demo-2
                 </script>
 
 
@@ -143,6 +235,7 @@
         </div>
         
         <div class="end_footer">
+<<<<<<< HEAD
             Contact us!<br>
             Send us an <a href= "mailto:writely@gmail.com">e-mail!</a><br>
             <small><i>Copyright &copy; 2020 Writely</i></small><br>
@@ -150,6 +243,14 @@
         
     </div>
     </div>
+=======
+        Contact us!<br>
+        Send us an <a href= "mailto:writely@gmail.com">e-mail!</a><br>
+        <small><i>Copyright &copy; 2020 Writely</i></small><br> </div>
+        
+    </div>
+    </div>  
+>>>>>>> Demo-2
     </body>
 </html>
 
