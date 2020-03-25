@@ -1,4 +1,15 @@
 <?php
+
+abstract class Connect {
+    abstract function getPage();
+}
+
+abstract class AbstractPageDirector {
+    abstract function __construct(Connect $builder_in);
+    abstract function buildPage();
+    abstract function getPage();
+}
+
 session_start(); 
 $error = '';
 if (isset($_POST['submit'])) {
@@ -32,4 +43,40 @@ $error = "user or password is invalid";
 mysqli_close($conn);
 }
 }
+class Home {
+    private $page = NULL;
+    private $page_title = NULL;
+    private $page_heading = NULL;
+    private $page_text = NULL;
+    function __construct() { }
+    function showPage() {
+      return $this->page;}
+    function setTitle($title_in) {
+      $this->page_title = $title_in;}
+    function setHeading($heading_in) {
+      $this->page_heading = $heading_in; }
+    function setText($text_in) {
+      $this->page_text .= $text_in;  }
+    function formatPage() {
+       $this->page  = '<html>';
+    }
+}
+
+class HomeC extends Builder {
+    private $page = NULL;
+    function __construct() {
+      $this->page = new HTMLPage();  }
+    function setTitle($title_in) {
+      $this->page->setTitle($title_in); }
+    function setHeading($heading_in) {
+      $this->page->setHeading($heading_in);}
+    function setText($text_in) {
+      $this->page->setText($text_in);   }
+    function formatPage() {
+      $this->page->formatPage();   }
+    function getPage() {
+      return $this->page;   }
+}
+
 ?>
+
