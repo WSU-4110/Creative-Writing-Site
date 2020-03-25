@@ -42,7 +42,7 @@ if(!empty($username) || !empty($firstName) || !empty($lastName) || !empty($email
                             $stmt->close();
                             
                             $stmt = $conn->prepare($INSERT);
-                            $stmt->bind_param("sssss", $username, $password, $firstName, $lastName, $email);
+                           // $stmt->bind_param("sssss", $username, $password, $firstName, $lastName, $email);
                             $stmt->execute();
                             echo "Sign up successful!";
                         }
