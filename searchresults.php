@@ -1,40 +1,3 @@
-<?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "upload";
-
-    // Create connection
-    $conn = mysqli_connect($servername, $username, $password, $dbname);
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    
-    if(isset($_POST['search'])){
-        $searchterm = $_POST['search'];
-        $searchterm = preg_replace("#[^0-9a-z]#i", "", $searchterm);
-
-        $term = mysqli_query($conn,"SELECT id, content, title, publicity FROM post WHERE Title LIKE '%$searchterm%' OR content LIKE '%$searchterm%' ") or die("Couldn't find stuff");
-
-        $count = mysqli_num_rows($term);
-
-        if($count == 0){
-            $out = "There were no search results";
-        }
-        else{
-            while($row = mysqli_fetch_array($term)){
-                if($row["publicity"] != 0){
-                    echo "<div class='post'><img img src='Generic-Profile.png' alt='profile' height= 20px; width=20px;><b> John Doe:</b><br><br><i>". $row["title"]. ":</i> <br>". $row["content"]. "</div>" ;
-                }
-            }
-        }
-    
-    }
-
-    $conn->close();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -77,6 +40,43 @@
                 <a href="upload.html">Upload</a>
             </div>
         </div>
+
+        <?php
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "upload";
+
+            // Create connection
+            $conn = mysqli_connect($servername, $username, $password, $dbname);
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+            
+            if(isset($_POST['search'])){
+                $searchterm = $_POST['search'];
+                $searchterm = preg_replace("#[^0-9a-z]#i", "", $searchterm);
+
+                $term = mysqli_query($conn,"SELECT id, content, title, publicity FROM post WHERE Title LIKE '%$searchterm%' OR content LIKE '%$searchterm%' ") or die("Couldn't find stuff");
+
+                $count = mysqli_num_rows($term);
+
+                if($count == 0){
+                    $out = "There were no search results";
+                }
+                else{
+                    while($row = mysqli_fetch_array($term)){
+                        if($row["publicity"] != 0){
+                            echo "<div class='post'><img img src='Generic-Profile.png' alt='profile' height= 20px; width=20px;><b> John Doe:</b><br><br><i>". $row["title"]. ":</i> <br>". $row["content"]. "</div>" ;
+                        }
+                    }
+                }
+            
+            }
+
+            $conn->close();
+        ?>
             
             
         <script type="text/javascript" src="mobile.js"></script>            
