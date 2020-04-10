@@ -1,3 +1,40 @@
+<?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "upload";
+
+    // Create connection
+    $conn = mysqli_connect($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    
+    if(isset($_POST['search'])){
+        $searchterm = $_POST['search'];
+        $searchterm = preg_replace("#[^0-9a-z]#i", "", $searchterm);
+
+        $term = mysqli_query($conn,"SELECT id, content, title, publicity FROM post WHERE Title LIKE '%$searchterm%' OR content LIKE '%$searchterm%' ") or die("Couldn't find stuff");
+
+        $count = mysqli_num_rows($term);
+
+        if($count == 0){
+            $out = "There were no search results";
+        }
+        else{
+            while($row = mysqli_fetch_array($term)){
+                if($row["publicity"] != 0){
+                    echo "<div class='post'><img img src='Generic-Profile.png' alt='profile' height= 20px; width=20px;><b> John Doe:</b><br><br><i>". $row["title"]. ":</i> <br>". $row["content"]. "</div>" ;
+                }
+            }
+        }
+    
+    }
+
+    $conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -21,7 +58,14 @@
                     <li><a href="account_creation.html">Sign-Up</a></li>
                 </ul>
             </nav>
-            <input type="text" placeholder="Search..">
+
+            <form action="searchresults.php" method="post">
+                <input type="text" name="search" placeholder="Search posts">
+                <input type="submit" value="Go"> 
+            </form>
+            
+
+
         </header>
         
         <div id="mobile__menu" class="overlay">
@@ -34,52 +78,8 @@
             </div>
         </div>
             
-        <div class ="side_bar">
-            Check out other writers:<br>
-            <img img src="Generic-Profile.png" alt="profile" height= 20px; width=20px;><b> <a href= >John Doe </a></b><br>
-            <img img src="Generic-Profile.png" alt="profile" height= 20px; width=20px;><b> <a href= >John Doe </a></b><br>
-            <img img src="Generic-Profile.png" alt="profile" height= 20px; width=20px;><b> <a href= >John Doe </a></b><br>
-            <img img src="Generic-Profile.png" alt="profile" height= 20px; width=20px;><b> <a href= >John Doe </a></b><br>
-            <img img src="Generic-Profile.png" alt="profile" height= 20px; width=20px;><b> <a href= >John Doe </a></b><br>
-        </div>
             
-        <script type="text/javascript" src="mobile.js"></script>
-        
-        
-            
-            
-        <?php
-            $servername = "localhost";
-            $username = "root";
-            $password = "";
-            $dbname = "upload";
-
-            // Create connection
-            $conn = new mysqli($servername, $username, $password, $dbname);
-            // Check connection
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
-
-            $sql = "SELECT id, content, Title, Publicity FROM post";
-            $result = $conn->query($sql);
-
-            if ($result->num_rows > 0) {
-                // output data of each row
-                
-                while($row = $result->fetch_assoc()) {
-                    if($row["Publicity"] != 0){
-                        echo "<div class='post'><img img src='Generic-Profile.png' alt='profile' height= 20px; width=20px;><b> John Doe:</b><br><br><i>". $row["Title"]. ":</i> <br>". $row["content"]. "</div>" ;
-                    }
-                    
-                }
-            } else {
-                echo "0 results";
-            }
-
-            $conn->close();
-        ?>
-            
+        <script type="text/javascript" src="mobile.js"></script>            
     
         
          <div class="end_footer">
