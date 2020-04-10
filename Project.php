@@ -21,7 +21,10 @@
                     <li><a href="account_creation.html">Sign-Up</a></li>
                 </ul>
             </nav>
-            <input type="text" placeholder="Search..">
+            <form action="searchresults.php" method="post">
+                <input type="text" name="search" placeholder="Search posts">
+                <input type="submit" value="Go"> 
+            </form> 
         </header>
         
         <div id="mobile__menu" class="overlay">
