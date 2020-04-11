@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <script  src="jquery-3.4.1.js"></script>
+        <script src ="file.js"></script>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="upload.css">
         <title>Writely</title>
@@ -82,11 +83,12 @@
                 <!--added this area for php functionality, divs need extra input tag to transfer 
                 to sql table, going to figure out how to make it not show up-->
                     <div id="editor" contenteditable="true" data-text="Enter text here..." required></div>
+                    <input type="file" id="fileupload" accept=".txt">
                     <a href="reading.html" id="submitbtn">Submit</a>
                     
                 
-                <script src ="file.js"></script>
-                <input type="file" id="fileupload" accept=".txt">
+                
+                
 
                 
 
