@@ -46,6 +46,7 @@
             <?php
                 $content = $_POST['content'];
                 $title = $_POST['title'];
+                $tags = $_POST['tags'];
                 $publicity = $_POST['publicity'];
 
 
@@ -62,7 +63,7 @@
                 } 
 
                 else {
-                $insert = "INSERT Into post (content, Title, Publicity) VALUES ('$content', '$title', '$publicity')";
+                $insert = "INSERT Into post (content, title, tags, publicity) VALUES ('$content', '$title', '$tags', '$publicity')";
                 //Prepare statement
                 
                 $stmt = $conn->prepare($insert);
@@ -82,12 +83,13 @@
         </div>
 
 
-        <div class="end_footer">
+        <div class="end_footer" style="position:0;">
             Contact us!<br>
             Send us an <a href= "mailto:writely@gmail.com">e-mail!</a><br>
-            <small><i>Copyright &copy; 2020 Writely</i></small><br> </div>
+            <small><i>Copyright &copy; 2020 Writely</i></small><br> 
+        </div>
             
     
     
     </body>
-
+</html>
