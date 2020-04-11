@@ -76,11 +76,13 @@
             
         <script type="text/javascript" src="mobile.js"></script>            
     
-        
-         <div class="end_footer" style="position: relative;">
+        <br>
+        <br>
+        <div class="end_footer" >
             Contact us!<br>
             Send us an <a href= "mailto:writely@gmail.com">e-mail!</a><br>
-        <small><i>Copyright &copy; 2020 Writely</i></small><br> </div>
+            <small><i>Copyright &copy; 2020 Writely</i></small><br> 
+        </div>
         
     </div>
     </div>  
