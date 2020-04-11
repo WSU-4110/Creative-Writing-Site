@@ -9,7 +9,7 @@
     </head>
     <body>
         <div id="page-container">
-        <div id="content-wrap">
+        <div style="text-align: -webkit-center;">
 
         <header>
             <div id="logo">Writely</div>
@@ -26,21 +26,16 @@
                 <input type="text" name="search" placeholder="Search posts">
                 <input type="submit" value="Go"> 
             </form>
-            
-
 
         </header>
         
-        <div id="mobile__menu" class="overlay">
-            <a class="close" onclick="closeNav()">&times;</a>
-            <div class="overlay__content">
-                <a href="Project.php">Home</a>
-                <a href="Explore.html">Explore</a>
-                <a href="Profile.html">Profile</a>
-                <a href="upload.html">Upload</a>
+
+        <div style="text-align: center; width: 50%;">
+            <div style="font-size: 30px; border-bottom: solid black 1.5px;">
+                <br>Search Results<br>
             </div>
         </div>
-
+        
         <?php
             $servername = "localhost";
             $username = "root";
@@ -58,7 +53,7 @@
                 $searchterm = $_POST['search'];
                 $searchterm = preg_replace("#[^0-9a-z]#i", "", $searchterm);
 
-                $term = mysqli_query($conn,"SELECT id, content, title, publicity FROM post WHERE Title LIKE '%$searchterm%' OR content LIKE '%$searchterm%' ") or die("Couldn't find stuff");
+                $term = mysqli_query($conn,"SELECT id, content, title, tags, publicity FROM post WHERE title LIKE '%$searchterm%' OR content LIKE '%$searchterm%' OR tags LIKE '%$searchterm%'") or die("Couldn't find stuff");
 
                 $count = mysqli_num_rows($term);
 
@@ -68,7 +63,7 @@
                 else{
                     while($row = mysqli_fetch_array($term)){
                         if($row["publicity"] != 0){
-                            echo "<div class='post'><img img src='Generic-Profile.png' alt='profile' height= 20px; width=20px;><b> John Doe:</b><br><br><i>". $row["title"]. ":</i> <br>". $row["content"]. "</div>" ;
+                            echo "<div class='post' style='width:40%'><img img src='Generic-Profile.png' alt='profile' height= 20px; width=20px;><b> John Doe:</b><br><br><i>". $row["title"]. ":</i> <br>". $row["content"]. "</div>" ;
                         }
                     }
                 }
