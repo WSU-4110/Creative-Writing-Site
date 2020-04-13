@@ -20,9 +20,9 @@ $stmt->bind_result($username, $password);
 $stmt->store_result();
 if($stmt->fetch()) 
 {
-    $_SESSION['login_user'] = $username; // Initializing Session
+    $_SESSION['login_user'] = $username; 
     echo "Login successful";
-   // header("location: project.php"); // Redirecting To Profile Page
+    header("location: Project.php"); 
 
 }
 else{
