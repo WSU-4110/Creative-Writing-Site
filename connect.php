@@ -96,7 +96,7 @@ if(!empty($username) || !empty($firstName) || !empty($lastName) || !empty($email
                             $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
                             
                             mail($to,$subject,$message,$headers);
-                            header('location:welcome.php');
+                            header('location:connect.php');
                             
                             
                             echo "Sign up successful!";
