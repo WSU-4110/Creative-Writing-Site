@@ -1,0 +1,84 @@
+<?php
+include('session.php');
+if(!isset($_SESSION['login_user'])){
+header("location: account_creation.php");
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<script src="lorem.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <title>Writely</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+    </head>
+    <body>  
+        <div id="page-container">
+        <div id="content-wrap">       
+        <header>
+            <div id="logo">Writely</div>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="Project.php">Home</a></li>
+                    <li><a href="profile.php">Profile</a></li>
+                    <li><a href="upload.php">Upload</a></li>
+                    <li><a> Welcome, <?php echo $login_session; ?></a></li>
+                    <li><a href= "logout.php"> Logout</a></li>
+                </ul>
+            </nav>
+            <form action="searchresults.php" method="post">
+                <input type="text" name="search" placeholder="Search posts">
+                <input type="submit" value="Go"> 
+            </form> 
+        </header>
+        <script type="text/javascript" src="mobile.js"></script>
+	<main>
+	   <!--<h1>Jerry Garcia</h1>-->
+		 <div class="side_bar">
+	   		<img src="JerryGarcia-DEMOProfilePic.jpg" width="213" height="282">
+			 <p><Strong>Jerry Garcia </strong> &nbsp
+			 <button onclick="window.location.href= 'Profile.html';">Follow</button></p>
+			 <a href="profile_BioPage.html">Bio</a> <a href="https://jerrygarcia.com/jerrys-story/">My Website</a>
+	  		 <p><b>User Rating: </b><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></p>
+			 <p><b>Followers: </b><i>123,420</i></p>
+			 <p><i>active since 08/01/1942</i></p>
+	  	</div>
+		<!--<h2>Featured Posts</h2>-->
+	 <!-- <div id="propage_center">-->
+		<div class="post">
+		 <b>Corgi Haiku</b><br>
+			<p>When I'm on the beach<br>My paws are always full of sand<br>Salt water makes me gag</p>	
+		</div>
+		<div class="post">
+		<b>Journal Entry #1</b><br>
+			<p><i>Feb. 01, 2020: </i>The waves are perfect today! I had to call off work at Trader Joe's<br> today because my surf board needs waxing.</p>
+		</div>
+		<div class="post">		
+		<b>Clarity Pyramid: Sunshine</b><br>
+			<p>rays<br>93*F<br>beaming<br>hot sand<br>warm breeze<br>
+			bright golden light<br>making tacos in my yurt</p>
+		</div>
+		 <div class="post">
+			<img img src="JerryGarcia-DEMOProfilePic.jpg" alt="profile" height= 20px; width=20px;><b> Jerry Garcia:</b>
+           		<div data-lorem="2-4p"></div>
+        	</div>
+		<div class="post">
+			<img img src="JerryGarcia-DEMOProfilePic.jpg" alt="profile" height= 20px; width=20px;><b> Jerry Garcia:</b>
+            		<div data-lorem="2-4p"></div>
+        	</div>
+	  <!--</div>-->
+	</main>
+            
+            <div class="end_footer">
+                Contact us!<br>
+                Send us an <a href= "mailto:writely@gmail.com">e-mail!</a><br>
+                <small><i>Copyright &copy; 2020 Writely</i></small><br> </div>
+        
+        </div>
+        </div>  
+    </body>
+   
+
+</html>
