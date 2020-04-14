@@ -158,6 +158,68 @@ input{
   margin-bottom: 20px;
 }
 
+.display_post{
+  margin: auto;
+  width: 40%;
+  border: 1.5px solid black;
+  padding: 15px;
+  margin-top: 50px;
+  background-color: white;
+  margin-bottom: 100px;
+}
+
+.rating{
+  position: absolute;
+  left: 50%;
+  top:12.5%;
+  transform: translate(-50%, -50%) rotateY(180deg);
+  display: flex;
+}
+
+.rating input {
+  display: none;
+
+}
+.rating label {
+  display: block;
+  cursor: pointer;
+  width: 50px;
+}
+.rating label:before {
+  content: '\f005';
+  font-family: fontAwesome;
+  position: relative;
+  display: block;
+  font-size: 50px;
+  color: #101010;
+}
+.rating label:after {
+  content: '\f005';
+  font-family: fontAwesome;
+  position: absolute;
+  display: block;
+  font-size: 50px;
+  color: lightgreen;
+  top: 0;
+  opacity: 0;
+  transition: .5s;
+  text-shadow: 0 2px 5px rgb(0,0,0,.5);
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after {
+  content: '\f005';
+  font-family: fontAwesome;
+  position: absolute;
+  display: block;
+  font-size: 50px;
+  color: lightgreen;
+  top: 0;
+  opacity: 1;
+  transition: .5s;
+  text-shadow: 0 2px 5px rgb(0,0,0,.5);
+}
+
 body {
   background-image: url('wood%20background.jpg');
 }
