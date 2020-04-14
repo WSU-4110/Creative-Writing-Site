@@ -40,6 +40,7 @@ header("location: account_creation.php");
 	<main>
         
     <!-- buttons for the star rating system -->
+    <div class="landing">
         <div class="rating">
             <input type="radio" name="star" id="star1"><label for="star1">
             </label>
@@ -52,12 +53,16 @@ header("location: account_creation.php");
             <input type="radio" name="star" id="star5"><label for="star5">
             </label>
         </div> 
+    </div>
         <br>
         <!-- displaying a specific post -->
-		<div class="display_post">
-			<img img src="JerryGarcia-DEMOProfilePic.jpg" alt="profile" height= 20px; width=20px;><b> Jerry Garcia:</b>
+        <div class="landing">
+		    <div class="display_post">
+			    <img img src="JerryGarcia-DEMOProfilePic.jpg" alt="profile" height= 20px; width=20px;><b> Jerry Garcia:</b>
             		<div data-lorem="2-4p"></div>
-        	</div>
+            </div>
+            
+        </div>  
       <!--</div>-->
       
       <!-- begin footer code -->

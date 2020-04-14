@@ -158,7 +158,17 @@ input{
   margin-bottom: 20px;
 }
 
+/* MIGHT NOT NEED LANDING TO FIX STAR RATING / POST OVERLAP?? */
+.landing {
+  height: 100%;
+  width: 100%;
+  position: flex;
+}
+.landing-wrapper {
+  height: 100%;
+}
 .display_post{
+  top: 10%;
   margin: auto;
   width: 40%;
   border: 1.5px solid black;
