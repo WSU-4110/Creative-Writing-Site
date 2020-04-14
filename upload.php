@@ -26,7 +26,7 @@ header("location: account_creation.php");
                 <ul class="nav__links">
                     <li><a href="Project.php">Home</a></li>
                     <li><a href="profile.php">Profile</a></li>
-                    <li><a href="upload.php">Upload</a></li>
+                    <li><a href="upload.html">Upload</a></li>
                     <li><a> Welcome, <?php echo $login_session; ?></a></li>
                     <li><a href= "logout.php"> Logout</a></li>
                 </ul>
