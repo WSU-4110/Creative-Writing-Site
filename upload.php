@@ -51,6 +51,7 @@ header("location: account_creation.php");
 
         <div style="text-align: center;">
             <?php
+                error_reporting(E_ERROR);
                 $content = $_POST['content'];
                 $title = $_POST['title'];
                 $tags = $_POST['tags'];
@@ -77,7 +78,7 @@ header("location: account_creation.php");
                 $stmt->bind_param("sss", $content, $title, $publicity);
                 $stmt->execute();
                     
-                echo "New record created successfully";
+                echo "<div class='post'>Post has been created!</div>";
                 
                 
                 
