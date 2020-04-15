@@ -92,7 +92,7 @@ header("location: account_creation.php");
                 to sql table, going to figure out how to make it not show up-->
                     <div id="editor" contenteditable="true" data-text="Enter text here..." required></div>
                     <input type="file" id="fileupload" accept=".txt">
-                    <a href="reading.html" id="submitbtn">Submit</a>
+                    <a href="reading.php" id="submitbtn">Submit</a>
                     
                 
                 
