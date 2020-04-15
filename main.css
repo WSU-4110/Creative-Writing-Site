@@ -230,6 +230,32 @@ input{
   text-shadow: 0 2px 5px rgb(0,0,0,.5);
 }
 
+.post_comment {
+  top: 10%;
+  margin: auto;
+  width: 40%;
+  border: 1.5px solid black;
+  padding: 15px;
+  margin-top: 50px;
+  background-color: gray;
+  margin-bottom: 100px;
+  
+}
+.input{
+  font: 20px Verdana;
+  outline: black;
+  box-shadow: black;
+
+  border: 1px solid black;
+  width: 300px;
+}
+.Submit {
+  outline: black;
+  font: 20px Verdana;
+  border: 1px solid black;
+  width: 300px;
+}
+
 body {
   background-image: url('wood%20background.jpg');
 }

@@ -61,6 +61,20 @@ header("location: account_creation.php");
 			    <img img src="JerryGarcia-DEMOProfilePic.jpg" alt="profile" height= 20px; width=20px;><b> Jerry Garcia:</b>
             		<div data-lorem="2-4p"></div>
             </div>
+            <div class="post_comment">
+                <form action="" method="POST">
+                <label> Name: 
+                <input type="text" name="Name" class="Input" style="width: 225px" required>
+                </label>
+                <br><br>
+                <label> Comment: <br>
+                <textarea name="Comment" class="Input" style="width: 300px" required></textarea>
+                </label>
+                <br><br>
+                <input type="submit" name="Submit" value="Submit Comment" class="Submit">
+                <br><br>
+                </form>
+            </div>
             
         </div>  
       <!--</div>-->
