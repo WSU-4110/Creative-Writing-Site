@@ -4,6 +4,7 @@ if(!isset($_SESSION['login_user'])){
 header("location: account_creation.php");
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
