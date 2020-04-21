@@ -1,4 +1,11 @@
 language: php
 
-script: ant main
+ 	branches:
+ 	only:
+ 	master
+  
+ 	before_install:
+ 	- travis_retry composer self-update
+ 	- composer install
+ 	script: phpunit --bootstrap vendor/autoload.php tests
 
