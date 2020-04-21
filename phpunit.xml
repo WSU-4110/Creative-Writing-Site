@@ -4,14 +4,14 @@
          backupStaticAttributes="false"
          strict="true"
          verbose="true">
-    <!--
+    
     <testsuites>
         <testsuite name="Creative-Writing-Site">
             <directory suffix="upload.php">tests/unit/</directory>
             <directory suffix="Project.php">tests/unit/</directory>
         </testsuite>
     </testsuites>
-    -->
+    
     <logging>
         <log type="coverage-html" target="coverage"/>
         <log type="coverage-clover" target="logs/clover.xml"/>
