@@ -7,8 +7,7 @@
     
     <testsuites>
         <testsuite name="Creative-Writing-Site">
-            <directory suffix="upload.php">tests/unit/</directory>
-            <directory suffix="Project.php">tests/unit/</directory>
+            <directory suffix="unittest.json">tests/unit/</directory>
         </testsuite>
     </testsuites>
     
