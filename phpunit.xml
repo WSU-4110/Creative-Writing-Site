@@ -7,19 +7,8 @@
     
     <testsuites>
         <testsuite name="Creative-Writing-Site">
-            <directory suffix="unittest.json">tests/unit/</directory>
+            <directory suffix="./tests/">tests/unit/</directory>
         </testsuite>
     </testsuites>
     
-    <logging>
-        <log type="coverage-html" target="coverage"/>
-        <log type="coverage-clover" target="logs/clover.xml"/>
-        <log type="coverage-crap4j" target="logs/crap4j.xml"/>
-        <log type="junit" target="logs/junit.xml" logIncompleteSkipped="false"/>
-    </logging>
-    <filter>
-        <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">../src</directory>
-        </whitelist>
-    </filter>
 </phpunit>
