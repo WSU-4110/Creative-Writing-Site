@@ -65,8 +65,8 @@ input[type="top_text"]{
   background-color: #24252a;
   color: white;
   width: 100%;
-  position: absolute;
-  bottom:0;
+  position: relative;
+  //bottom:0;
   height:2.5 rem;
   margin-top: 15px;
 }
