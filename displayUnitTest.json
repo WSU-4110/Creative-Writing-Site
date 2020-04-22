@@ -1,0 +1,869 @@
+{
+  "tests": [
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "B1ZoRNXrOU",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/",
+          "warnings": []
+        },
+        {
+          "complete": false,
+          "continueOnFail": false,
+          "description": null,
+          "height": 802,
+          "id": "HkiANmB_U",
+          "nodeName": null,
+          "resize": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "FULL_PAGELOAD",
+          "value": "${baseUrl}/",
+          "warnings": [],
+          "width": 861
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BypCNQruL",
+          "nodeName": null,
+          "selector": "div > div:nth-of-type(3) > h2",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": "SnapTest is a browser extension for fast, light-weight, and scalable browser tests & macros.",
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 518,
+          "y": 252
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1RRN7r_I",
+          "nodeName": null,
+          "selector": ".cta-secondary",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": "+ What does Reddit think of SnapTest?",
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 607,
+          "y": 491
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "B1gkSmBO8",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/r/programming/comments/6mgvgq/made_a_selenium_idelike_chrome_extension_that_can/",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": "opened a reddit link in a new tab",
+          "id": "H1elJBXH_U",
+          "nodeName": null,
+          "regex": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "PATH_ASSERT",
+          "value": "/r/programming/comments/6mgvgq/made_a_selenium_idelike_chrome_extension_that_can/",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1Z1HXBu8",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/_generated_background_page.html",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "ryxZJH7r_8",
+          "nodeName": null,
+          "regex": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "PATH_ASSERT",
+          "value": "/_generated_background_page.html",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SJRyHQBuU",
+          "nodeName": null,
+          "selector": "div > div:nth-of-type(3) > div > div > a",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": "Privacy Policy",
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 450,
+          "y": 714
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BJCJH7S_U",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/privacy-policy/",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "ryxCkSQSdU",
+          "nodeName": null,
+          "regex": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "PATH_ASSERT",
+          "value": "/privacy-policy/",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "ryWeHXr_8",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "HklZxSQHdI",
+          "nodeName": null,
+          "regex": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "PATH_ASSERT",
+          "value": "/",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rkhZH7BuI",
+          "nodeName": null,
+          "selector": ".grid-item-2",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BkAZH7HOU",
+          "nodeName": null,
+          "selector": ".grid-item-2",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rkmGSmSuL",
+          "nodeName": null,
+          "regex": false,
+          "selector": "section > div > div > ul > li:nth-of-type(2)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "TEXT_ASSERT",
+          "value": "Scale using components, variables, environments, run configurations, tags, and more...",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "HJjMH7SO8",
+          "nodeName": null,
+          "selector": "section:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SJnGr7SdI",
+          "nodeName": null,
+          "regex": false,
+          "selector": "footer > div > div > div > p",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "TEXT_ASSERT",
+          "value": "SnapTest is a product of Prolific Devs - ©",
+          "warnings": []
+        }
+      ],
+      "description": "",
+      "id": "r1CnVQSdU",
+      "name": "new user walkthrough",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "https://www.snaptest.io",
+          "id": "Byxo04QHuI",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    },
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rJgUNUNBOL",
+          "index": null,
+          "nodeName": null,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "URL_CHANGE_INDICATOR",
+          "value": "/lab6/display_post.html",
+          "warnings": []
+        },
+        {
+          "complete": false,
+          "continueOnFail": false,
+          "description": null,
+          "height": 968,
+          "id": "HyIVL4ru8",
+          "nodeName": null,
+          "resize": false,
+          "selector": "",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "FULL_PAGELOAD",
+          "value": "${baseUrl}/lab6/display_post.html",
+          "warnings": [],
+          "width": 1296
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "ByqVUVHdU",
+          "nodeName": null,
+          "selector": "main > div > div > label:nth-of-type(4)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 581,
+          "y": 154
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1xcVU4H_I",
+          "inputType": "radio",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#star4",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": true,
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "B1n4UVHuI",
+          "nodeName": null,
+          "selector": "main > div > div > label",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 742,
+          "y": 141
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "HJxnVUESuL",
+          "inputType": "radio",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#star1",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": true,
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "S1RVIEHO8",
+          "nodeName": null,
+          "selector": "main > div > div > label:nth-of-type(2)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 702,
+          "y": 154
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1e04IVSdI",
+          "inputType": "radio",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#star2",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": true,
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "H1kBIVH_I",
+          "nodeName": null,
+          "selector": "main > div > div > label:nth-of-type(3)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 652,
+          "y": 152
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "HkxkrI4Hd8",
+          "inputType": "radio",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#star3",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": true,
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rJxrI4SO8",
+          "nodeName": null,
+          "selector": "main > div > div > label:nth-of-type(5)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 553,
+          "y": 154
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SkxxrI4Bd8",
+          "inputType": "radio",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "#star5",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": true,
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "Bk-lr84B_I",
+          "nodeName": null,
+          "selector": "div:nth-of-type(2) > div > div > p:nth-of-type(2)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": "Lectus sit amet est placerat in egestas erat imperdiet. Risus in hendrerit gravida rutrum quisque. Interdum velit laoreet id donec ultrices tincidunt. Morbi enim nunc faucibus a pellentesque sit amet. Bibendum ut tristique et egestas quis ipsum. Quisque sagittis purus sit amet volutpat consequat mauris. Convallis a cras semper auctor neque vitae tempus quam pellentesque. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. A lacus vestibulum sed arcu non odio euismod. Maecenas sed enim ut sem viverra aliquet eget sit. Purus sit amet volutpat consequat mauris. Aliquam purus sit amet luctus venenatis lectus magna fringilla. Id neque aliquam vestibulum morbi blandit. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Aliquam faucibus purus in massa tempor nec feugiat. Lacus sed turpis tincidunt id aliquet risus. Elementum nibh tellus molestie nunc non blandit massa enim. Pellentesque habitant morbi tristique senectus et netus.",
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 626,
+          "y": 504
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "HJzSUEHO8",
+          "nodeName": null,
+          "selector": "[name=Name]",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 688,
+          "y": 679
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BJxmr84rdI",
+          "inputType": "text",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "[name=Name]",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "shawn",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rJgHHLErO8",
+          "inputType": "textarea",
+          "isContentEditable": false,
+          "nodeName": null,
+          "selector": "[name=Comment]",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "INPUT",
+          "value": "isugfsdgfsdg",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "Sk_r8EHOI",
+          "nodeName": null,
+          "selector": "[name=Submit]",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 790,
+          "y": 800
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rJlOSUErOL",
+          "nodeName": null,
+          "selector": "div main form",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "SUBMIT",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rJhH8VSdL",
+          "nodeName": null,
+          "selector": "[name=Submit]",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [],
+          "x": 806,
+          "y": 717
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "HJeLIErd8",
+          "nodeName": null,
+          "selector": "div:nth-of-type(2) > div > div > p",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": "Nulla facilisi morbi tempus iaculis urna id. Et leo duis ut diam quam nulla porttitor massa. Diam donec adipiscing tristique risus. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Sem et tortor consequat id porta nibh venenatis cras sed. Vitae nunc sed velit dignissim sodales ut. Justo donec enim diam vulputate. Vitae auctor eu augue ut lectus arcu. Facilisi morbi tempus iaculis urna. Fermentum odio eu feugiat pretium nibh.",
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 773,
+          "y": 283
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1b88VruU",
+          "nodeName": null,
+          "selector": "div:nth-of-type(2) > div > div > p",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": "Nulla facilisi morbi tempus iaculis urna id. Et leo duis ut diam quam nulla porttitor massa. Diam donec adipiscing tristique risus. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Sem et tortor consequat id porta nibh venenatis cras sed. Vitae nunc sed velit dignissim sodales ut. Justo donec enim diam vulputate. Vitae auctor eu augue ut lectus arcu. Facilisi morbi tempus iaculis urna. Fermentum odio eu feugiat pretium nibh.",
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 695,
+          "y": 220
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rkgZ8I4HuL",
+          "nodeName": null,
+          "selector": "div > main > div:nth-of-type(2)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 943,
+          "y": 320
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "r1MLLNHuL",
+          "nodeName": null,
+          "selector": "div:nth-of-type(2) > div > div > p:nth-of-type(2)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": "In vitae turpis massa sed. Amet dictum sit amet justo donec enim. Dignissim suspendisse in est ante. Tempor commodo ullamcorper a lacus vestibulum. Fringilla urna porttitor rhoncus dolor purus non enim praesent. Integer vitae justo eget magna fermentum. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Ultricies mi eget mauris pharetra et. Tellus pellentesque eu tincidunt tortor aliquam nulla. Amet facilisis magna etiam tempor. Tempor orci dapibus ultrices in iaculis. Risus nec feugiat in fermentum posuere urna nec tincidunt.",
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 848,
+          "y": 323
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BkmLI4BOU",
+          "nodeName": null,
+          "selector": "div > main > div:nth-of-type(2)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": null,
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 1000,
+          "y": 399
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "Hy4ILVS_L",
+          "nodeName": null,
+          "selector": "div:nth-of-type(2) > div > div > p:nth-of-type(2)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "textAsserted": false,
+          "textContent": "In vitae turpis massa sed. Amet dictum sit amet justo donec enim. Dignissim suspendisse in est ante. Tempor commodo ullamcorper a lacus vestibulum. Fringilla urna porttitor rhoncus dolor purus non enim praesent. Integer vitae justo eget magna fermentum. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Ultricies mi eget mauris pharetra et. Tellus pellentesque eu tincidunt tortor aliquam nulla. Amet facilisis magna etiam tempor. Tempor orci dapibus ultrices in iaculis. Risus nec feugiat in fermentum posuere urna nec tincidunt.",
+          "timeout": null,
+          "type": "MOUSEDOWN",
+          "warnings": [
+            "Couldn't find a good selector strategy to target this element. "
+          ],
+          "x": 790,
+          "y": 344
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "Sk68UVHuU",
+          "nodeName": null,
+          "selector": "[name=Name]",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rJAUU4BdI",
+          "nodeName": null,
+          "selector": "[name=Comment]",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SyJwUVSdL",
+          "nodeName": null,
+          "selector": "[name=Name]",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "By7DI4ru8",
+          "nodeName": null,
+          "regex": false,
+          "selector": "[name=Submit]",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "VALUE_ASSERT",
+          "value": "Submit Comment",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "SyFDLErdI",
+          "nodeName": null,
+          "selector": "main > div > div > label",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "ByiPLEBuU",
+          "nodeName": null,
+          "selector": "main > div > div > label:nth-of-type(3)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "Hyhv84HuL",
+          "nodeName": null,
+          "selector": "main > div > div > label:nth-of-type(4)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        }
+      ],
+      "description": "",
+      "id": "BJLAVEBu8",
+      "name": "lab 6 test",
+      "type": "test",
+      "variables": [
+        {
+          "defaultValue": "http://localhost",
+          "id": "r1gN1HVBuI",
+          "name": "baseUrl",
+          "type": "STRING_VAR"
+        }
+      ]
+    }
+  ],
+  "components": [],
+  "directory": {
+    "tree": {
+      "children": [
+        {
+          "id": "SkICV4SdU",
+          "leaf": true,
+          "module": "Unnamed test",
+          "testId": "BJLAVEBu8",
+          "type": "test"
+        },
+        {
+          "children": [],
+          "collapsed": false,
+          "id": "BJIa4VHOI",
+          "module": "Lab 6"
+        },
+        {
+          "children": [
+            {
+              "id": "H1C3Nmru8",
+              "leaf": true,
+              "module": "Unnamed test",
+              "testId": "r1CnVQSdU",
+              "type": "test"
+            }
+          ],
+          "collapsed": false,
+          "id": "BJ_0B7HdL",
+          "module": "Your project"
+        }
+      ],
+      "module": "tests",
+      "showGen": true,
+      "topLevel": true
+    }
+  },
+  "dataProfiles": [],
+  "runs": [],
+  "userSettings": {
+    "drafts": false,
+    "warnings": false,
+    "autodescribe": false,
+    "actionNumbers": false,
+    "globalTimeout": 5000,
+    "descriptions": [],
+    "selectorPriority": [
+      {
+        "type": "attr",
+        "name": "test-id",
+        "enabled": true,
+        "ancestor": false
+      },
+      {
+        "type": "id",
+        "enabled": true
+      },
+      {
+        "type": "name",
+        "enabled": true
+      },
+      {
+        "type": "type",
+        "enabled": true
+      },
+      {
+        "type": "ancestor",
+        "enabled": true
+      },
+      {
+        "type": "class",
+        "enabled": true
+      }
+    ]
+  },
+  "tags": []
+}

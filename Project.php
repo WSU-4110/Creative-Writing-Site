@@ -1,3 +1,9 @@
+<?php
+include('session.php');
+if(!isset($_SESSION['login_user'])){
+header("location: account_creation.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -15,19 +21,23 @@
             <div id="logo">Writely</div>
             <nav>
                 <ul class="nav__links">
-                    <li><a href="Project.html">Home</a></li>
-                    <li><a href="Profile.html">Profile</a></li>
-                    <li><a href="upload.html">Upload</a></li>
-                    <li><a href="account_creation.html">Sign-Up</a></li>
+                    <li><a href="Project.php">Home</a></li>
+                    <li><a href="profile.php">Profile</a></li>
+                    <li><a href="writing.php">Upload</a></li>
+                    <li><a> Welcome, <?php echo $login_session; ?></a></li>
+                    <li><a href= "logout.php"> Logout</a></li>
                 </ul>
             </nav>
-            <input type="text" placeholder="Search..">
+            <form action="searchresults.php" method="post">
+                <input type="text" name="search" placeholder="Search posts">
+                <input type="submit" value="Go"> 
+            </form> 
         </header>
         
         <div id="mobile__menu" class="overlay">
             <a class="close" onclick="closeNav()">&times;</a>
             <div class="overlay__content">
-                <a href="Project.html">Home</a>
+                <a href="Project.php">Home</a>
                 <a href="Explore.html">Explore</a>
                 <a href="Profile.html">Profile</a>
                 <a href="upload.html">Upload</a>
@@ -45,15 +55,42 @@
             
         <script type="text/javascript" src="mobile.js"></script>
         
-        <div class="post">
-            <img img src="Generic-Profile.png" alt="profile" height= 20px; width=20px;><b> John Doe:</b>
-            <div data-lorem="2-4p"></div>
-        </div>
         
-        <div class="post">
-            <img img src="Generic-Profile.png" alt="profile" height= 20px; width=20px;><b> Jane Doe:</b>
-            <div data-lorem="2-4p"></div>
-        </div>
+            
+            
+        <?php
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "upload";
+
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+
+            $sql = "SELECT id, content, Title, Publicity FROM post";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                // output data of each row
+                
+                while($row = $result->fetch_assoc()) {
+                    if($row["Publicity"] != 0){
+                        echo "<div class='post'><img img src='Generic-Profile.png' alt='profile' height= 20px; width=20px;><b> John Doe:</b><br><br><i>". $row["Title"]. ":</i> <br>". $row["content"]. "</div>" ;
+                    }
+                    
+                }
+            } else {
+                echo "0 results";
+            }
+
+            $conn->close();
+        ?>
+            
+    
         
          <div class="end_footer">
             Contact us!<br>

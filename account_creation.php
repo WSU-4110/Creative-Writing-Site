@@ -1,6 +1,11 @@
+<?php
+include('userLogin.php');
+if(isset($_SESSION['login_user'])){
+header("location: profile.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="account_creation.css">
     <link rel="stylesheet" href="login.css">
@@ -15,9 +20,9 @@
         <nav>
             <ul class="nav__links">
                 <li><a href="Project.php">Home</a></li>
-                <li><a href="Profile.html">Profile</a></li>
-                <li><a href="upload.html">Upload</a></li>
-                <li><a href="account_creation.html">Sign-Up</a></li>
+                <li><a href="profile.php">Profile</a></li>
+                <li><a href="upload.php">Upload</a></li>
+                <li><a href="logout.php">Logout</a></li>
             </ul>
         </nav>
         <form action="searchresults.php" method="post">
