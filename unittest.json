@@ -1,0 +1,147 @@
+{
+  "tests": [
+    {
+      "actions": [
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "HJSPHmHO8",
+          "nodeName": null,
+          "selector": "#editor",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BypcBmrd8",
+          "nodeName": null,
+          "regex": false,
+          "selector": "div > p > strong",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "TEXT_ASSERT",
+          "value": "nidalabihana",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BJGjrQSdL",
+          "nodeName": null,
+          "regex": false,
+          "selector": "#submitbtn",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "TEXT_ASSERT",
+          "value": "Add bio",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "Hy16rQrOI",
+          "nodeName": null,
+          "selector": "#content-wrap",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "BJfRHQHd8",
+          "nodeName": null,
+          "regex": false,
+          "selector": "nav > ul > li:nth-of-type(2) > a",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "TEXT_ASSERT",
+          "value": "Profile",
+          "warnings": []
+        },
+        {
+          "continueOnFail": false,
+          "description": null,
+          "id": "rkleUXSdL",
+          "nodeName": null,
+          "selector": "div > div:nth-of-type(2)",
+          "selectorType": "CSS",
+          "suggestions": [],
+          "timeout": null,
+          "type": "EL_PRESENT_ASSERT",
+          "warnings": []
+        }
+      ],
+      "description": "",
+      "id": "H1OEfmBu8",
+      "name": "Unit Test",
+      "type": "test",
+      "variables": []
+    }
+  ],
+  "components": [],
+  "directory": {
+    "tree": {
+      "children": [
+        {
+          "id": "By_VMmrdU",
+          "leaf": true,
+          "module": "Unnamed test",
+          "testId": "H1OEfmBu8",
+          "type": "test"
+        }
+      ],
+      "module": "tests",
+      "showGen": true,
+      "topLevel": true
+    }
+  },
+  "dataProfiles": [],
+  "runs": [],
+  "userSettings": {
+    "drafts": false,
+    "warnings": false,
+    "autodescribe": false,
+    "actionNumbers": false,
+    "globalTimeout": 5000,
+    "descriptions": [],
+    "selectorPriority": [
+      {
+        "type": "attr",
+        "name": "test-id",
+        "enabled": true,
+        "ancestor": false
+      },
+      {
+        "type": "id",
+        "enabled": true
+      },
+      {
+        "type": "name",
+        "enabled": true
+      },
+      {
+        "type": "type",
+        "enabled": true
+      },
+      {
+        "type": "ancestor",
+        "enabled": true
+      },
+      {
+        "type": "class",
+        "enabled": true
+      }
+    ]
+  },
+  "tags": []
+}
