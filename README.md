@@ -20,13 +20,13 @@ This website serves to help give amateur and even professional writers a platfor
 
 # Technology Stack:
     The technology stacks used to implement:
-    *HTML
-    *CSS
-    *mysql
-    *php
-    *JavaScript
-    *xampp
-    *phpMyAdmin
-    *Apache Tomcat
+     * HTML
+     * CSS
+     * mysql
+     * php
+     * JavaScript
+     * xampp
+     * phpMyAdmin
+     * Apache Tomcat
 
 
