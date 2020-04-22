@@ -19,14 +19,14 @@ This website serves to help give amateur and even professional writers a platfor
  The audience for this project are amateur writers who want to publish their work, whether their purpose be to gain attention by a large publisher or they just want their work to be seen, and for users who want to read work created by independent authors for free.
 
 # Technology Stack:
-    The technology stacks used to implement:
-     * HTML
-     * CSS
-     * mysql
-     * php
-     * JavaScript
-     * xampp
-     * phpMyAdmin
-     * Apache Tomcat
+The technology stacks used to implement:
+* HTML
+* CSS
+* mysql
+* php
+* JavaScript
+* xampp
+* phpMyAdmin
+* Apache Tomcat
 
 
