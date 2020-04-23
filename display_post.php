@@ -80,6 +80,15 @@ if (!isset($_SESSION['login_user'])) {
 
 
 
+
+                </div>
+
+                <div class="landing">
+                    <div class="post_comment">
+                        <form action="getComments.php" method="GET">
+                            <button type="submit" name="showComments">Read Comments</button>
+                        </form>
+                    </div>
                 </div>
                 <!--</div>-->
                 <!-- begin footer code -->
