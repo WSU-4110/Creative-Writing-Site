@@ -72,9 +72,9 @@ if (!isset($_SESSION['login_user'])) {
                         <form action="comments.php" method="POST">
 
                             Enter Username:
-                            <input type='text' name='username' value=''><br>
-                            <textarea name='text'></textarea><br>
-                            <button type='submit' name='submit'>Comment</button>
+                            <input type="text" name="username" value=""><br>
+                            <textarea name="textt"></textarea><br>
+                            <button type="submit" name="cmtSubmit">Comment</button>
                         </form>
                     </div>
 
