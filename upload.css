@@ -56,6 +56,9 @@
   display: inline-block;
   border-radius: 10px;
   text-align: left;
+  width:auto;
+  height:auto;
+  border: solid gray;
 }
 
 #uploadbtn{
@@ -69,6 +72,9 @@
   display: inline-block;
   text-align: right ;
   border-radius: 10px;
+  width:auto;
+  height:auto;
+  border: solid gray;
 }
 
 #submitbtn{
