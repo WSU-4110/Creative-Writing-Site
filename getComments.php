@@ -1,3 +1,10 @@
+<?php
+include('session.php');
+if (!isset($_SESSION['login_user'])) {
+    header("location: account_creation.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,7 +38,7 @@
     </div>
 </div>
 <div class="landing">
-    <div class="display_post">
+    <div class="comment_post">
         <?php
 
 
