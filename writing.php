@@ -42,7 +42,8 @@ header("location: account_creation.php");
                 <a href="Project.html">Home</a>
                 <a href="Profile.html">Profile</a>
                 <a href="upload.html">Upload</a>
-                <a href="account_creation.html">Sign-Up</a>
+                <li><a> Welcome, <?php echo $login_session; ?></a></li>
+                    <li><a href= "logout.php"> Logout</a></li>
             </div>
         </div>
         <script type="text/javascript" src="mobile.js"></script>
